@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/main.css"  >
+  <link rel="stylesheet" href="/assets/css/pages/home.css">
+  <link rel="stylesheet" href="/assets/css/header_footer.css"> 
+
+  <link rel="stylesheet" href="/assets/css/boutique.css"> <!-- TEMPORAIRE BOUTIQUE -->
+
+  <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
+  <script type="module" src="/assets/js/header.js" defer></script> <!-- JS | Charge le header -->
+  <script type="module" src="/assets/js/footer.js" defer></script> <!-- JS | Charge le footer-->
+  <title>Boutique | Les ateliers Lilo</title>
+</head>
+
+<body>
+  <main-header current="home"></main-header>
+
+<main>    
+<div id="background1">       
+  <div class="breadcrumbs">Accueil > Boutique > <strong>Badges</strong></div>
+
+  <!-- Recherche + Filtres -->
+  <div class="searchBar_shop">
+    <form>
+      <input type="search" id="shopSearch" name="" placeholder="Rechercher un produit dans la boutique de Lilo">
+      <button class="shopSearch">
+        <img src="/img/search.svg" alt="">
+      </button>
+    </form>
+  </div>
+
+  <!-- Filtres -->
+    <div class="filter_container">
+      <button onclick="window.location.href = 'boutique.html'" class="shopButton">Tous</button>
+      <button class="shopButton">Saisonniers</button>
+      <button onclick="window.location.href = 'badges.html'" class="shopButton_active">Badges</button>
+      <button onclick="window.location.href = 'bijoux.html'" class="shopButton">Bijoux</button>
+      <button onclick="window.location.href = 'papeterie.html'" class="shopButton">Papeterie</button>
+    </div>
+
+<!-- La boutique | Shop Global -->
+  <section id="boutique"> <!-- changer ID -->
+    <div class="shop_offres_container"> <!-- changer je sais pas encore-->
+
+      <div class="shopOffres">
+          <span class="product">#Badges</span>
+          <a href="#"> <div class="wishlist"></div></a>
+          <img class="produit" src="/img/Produits_site/Badges/fête_paires.webp" alt="clics">
+          <span class="description">La fête des paires</span>
+          <span class="price">5,00€</span>
+          <a class="button_panier" href="#" >
+            <img src="/img/cadi.svg">
+            <span>Ajouter</span>
+          </a>
+        </div>
+
+      <div class="shopOffres">
+        <span class="product">#Badges</span>
+        <a href="#"> <div class="wishlist"></div> </a>
+        <img class="produit" src="/img/Produits_site/Badges/la_prose.webp" alt="vino">
+        <span class="description">Ça ne sent pas la prose</span>
+        <span class="price">5,00€</span>
+        <a class="button_panier" href="#" >
+          <img src="/img/cadi.svg">
+          <span>Ajouter</span>
+        </a>
+      </div>
+
+      <div class="shopOffres">
+        <span class="product">#Badges</span>
+        <a href="#"> <div class="wishlist"></div> </a>
+        <img class="produit" src="/img/Produits_site/Badges/tue_rend_folle.webp" alt="clics">
+        <span class="description">Ce qui ne me tue pas...</span>
+        <span class="price">5,00€</span>
+        <a class="button_panier_soldout" href="#" >
+          <span>Rupture de stock</span>
+          </a>
+        </div>
+    </div>
+
+    <div class="shop_offres_container">
+        <div class="shopOffres">
+            <span class="product">#badges</span>
+            <a href="#"> <div class="wishlist"></div> </a>
+            <img class="produit" src="/img/Produits_site/Badges/croitre_en_soi.webp" alt="clics">
+            <span class="description">Il faut croître en soi</span>
+            <span class="price">5,00€</span>
+            <a class="button_panier" href="#" >
+              <img src="/img/cadi.svg">
+              <span>Ajouter</span>
+            </a>
+          </div>
+  
+        <div class="shopOffres">
+          <span class="product">#Badges</span>
+          <a href="#"> <div class="wishlist"></div> </a>
+          <img class="produit" src="/img/Produits_site/Badges/aller_loin.webp" alt="vino">
+          <span class="description">Jusqu’où peut-on aller trop loin?</span>
+          <span class="price">5,00€</span>
+          <a class="button_panier" href="#" >
+            <img src="/img/cadi.svg">
+            <span>Ajouter</span>
+          </a>
+        </div>
+  
+        <div class="shopOffres">
+          <span class="product">#Badges</span>
+          <a href="#"> <div class="wishlist"></div> </a>
+          <img class="produit" src="/img/Produits_site/Badges/procrastiner_demain.webp" alt="clics">
+          <span class="description">J’arrête de procrastiner, Demain</span>
+          <span class="price">5,00€</span>
+          <a class="button_panier" href="#" >
+            <img src="/img/cadi.svg">
+            <span>Ajouter</span>
+            </a>
+          </div>
+      </div>
+
+    <div class="shop_offres_container">
+        <div class="shopOffres">
+            <span class="product">#Badges</span>
+            <a href="#"> <div class="wishlist"></div> </a>
+            <img class="produit" src="/img/Produits_site/Badges/revenez_hier.webp" alt="clics">
+            <span class="description">Revenez plutôt hier</span>
+            <span class="price">5,00€</span>
+            <a class="button_panier_soldout" href="#" >
+              <span>Rupture de stock</span>
+            </a>
+          </div>
+  
+        <div class="shopOffres">
+          <span class="product">#Badges</span>
+          <a href="#"> <div class="wishlist"></div> </a>
+          <img class="produit" src="/img/Produits_site/Badges/vino_very_strass.png" alt="vino">
+  
+          <span class="description">In vino very strass</span>
+  
+          <span class="price">5,00€</span>
+  
+          <a class="button_panier" href="#" >
+            <img src="/img/cadi.svg">
+            <span>Ajouter</span>
+          </a>
+        </div>
+  
+        <div class="shopOffres">
+          <span class="product">#Badges</span>
+  
+          <a href="#"> <div class="wishlist"></div> </a>
+  
+          <img class="produit" src="/img/Produits_site/Badges/thérapeute_rayé.webp" alt="clics">
+          
+          <span class="description">Je ne suis pas votre thérapeute</span>
+  
+          <span class="price">5,00€</span>
+  
+          <a class="button_panier" href="#" >
+            <img src="/img/cadi.svg">
+            <span>Ajouter</span>
+            </a>
+          </div>
+      </div>
+      <button class="loadProduct">CHARGER +</button>
+  </section>
+</div>    
+</main>
+
+  <!-- Footer -->
+  <main-footer current="contact"></main-footer>
+</body>
+</html>

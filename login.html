@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/main.css"> <!-- CSS Global-->
+  <link rel="stylesheet" href="../assets/css/users.css"> <!-- CSS Login & Compte Utilisateur-->
+  <link rel="stylesheet" href="../assets/css/pages/home.css">
+  <link rel="stylesheet" href="../assets/css/header_footer.css"> <!-- CSS Header | Footer -->
+  <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
+  <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
+  <script type="module" src="../assets/js/footer.js" defer></script> <!-- JS | Charge le footer-->
+  <title>Connexion | Les ateliers de Lilo</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <main-header current="home"></main-header> 
+  
+  <!-- Contenu -->
+  <main class="mainAccount">
+    <div class="breadcrumbs">Accueil > <strong>Connexion | Inscription</strong></div>
+    <div class="titlePage">Connexion | Inscription</div>
+    <div id="container">
+      <div id="contentBloc">
+
+        <!-- Bloc Gauche | Connexion -->
+        <div class="loginBloc">
+          <p class="hello">Hello!</p>
+          <p class="loginText">Connecte toi pour accéder à ton compte.</p>
+          <h1 class="login">Connexion</h1>
+
+          <div class="loginBorder_bottom"></div>
+
+          <form>
+            <input type="text" name="user" id="userLogin" placeholder="Nom d'utilisateur ou adresse e-mail">
+            <input type="password" name="user" id="userPassword" placeholder="Mot de passe">
+          </form>
+      
+          <div class="remember">
+            <input type="checkbox" name="check" id="signIn_check"> Se souvenir de moi <span class="forgot"><a href="#">Mot de passe oublié?</a></span></p>
+            <input type="submit" class="loginButton" value="Se connecter" onclick="window.location.href = 'account.html';" ></input>
+          </div>
+
+          <p class="personelData">Vos donnéees personnelles seront utilisées pour améliorer votre expérience sur ce site, à gérer votre compte ainsi que d'autres points décrit dans notre <span class="politique"><a href="#">Politique de confidentialité.</a></span>
+          </p>  
+        </div>
+
+        <!-- Zone Droite | Inscription -->
+        <div class="signInBloc">
+          <p class="noMember">Pas encore membre ?</p>
+          <p class="loginText">Inscris-toi pour nous rejoindre</p>
+          <h1 class="login">Inscription</h1>
+
+          <div class="loginBorder_bottom"></div>
+
+          <form>
+            <input type="text" name="user" id="userLogin" placeholder="Adresse e-mail*">             
+            <input type="password" name="password" id="userPassword" placeholder="Mot de passe*">
+          </form>
+
+          <div class="remember2">
+            <input type="checkbox" name="check" id="signIn_check2"> J'accepte les <span class="politique"><a href="#">Conditions générales</a></span> et la <span class="politique"><a href="#">Politique de confidentialité.</a></span>
+          </div>
+            <input input type="submit" class="loginButton" value="Créer un compte"></input>
+        </div>
+      </div>
+    
+      <!-- Connexion social -->
+      <div class="socialLogin">      
+        <div class="socialBorder_bottom"></div>
+          <p class="socialOu">OU</p>
+
+          <!-- Google -->
+          <button class="socialButton">
+            <span class="button_icon">
+              <img class="social_button" src="/img/loginGoogle.svg">
+            </span>
+            <span class="socialButton_text">Continuer avec Google</span>
+          </button>
+          
+          <!-- Facebook -->
+          <button class="socialButton">
+            <span class="button_icon">
+              <img class="social_button" src="/img/loginFacebook.svg">
+            </span>
+            <span class="socialButton_text">Continuer avec Facebook</span>
+          </button>          
+        </div>
+      </div>
+  </main>
+
+  <!-- Footer -->
+  <main-footer current="contact"></main-footer>
+
+</body>
+</html>
