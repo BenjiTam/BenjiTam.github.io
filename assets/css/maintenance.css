@@ -23,6 +23,7 @@ h1 {
 
 p {
     margin-bottom: -20px;
+    line-height: 40px;
 }
 
 /* RESEAUX SOCIAUX */
@@ -49,4 +50,9 @@ p {
 
 .iconColor:hover { 
     filter: invert(0.5) sepia(1) saturate(2) hue-rotate(285deg);
+}
+
+a{
+    text-decoration: none;
+    color: #E156A0;
 }
