@@ -1,0 +1,249 @@
+/* -- CSS TEMPORAIRE BOUTIQUE --*/
+
+#boutique{
+    margin-top: 30px;
+    width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+  /*-- Recherche + Filtre boutique --*/
+.searchBar_shop {
+    text-align: center;
+}
+  
+input[type="search"] {
+    font-size: 14px;
+    color: #333; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box; 
+    width: 800px;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    box-shadow:  0px 1px 9px 0px #a7a7a79a;
+    outline: none;
+    margin-bottom: 30px;
+  }
+
+.shopSearch {
+    position: absolute;
+    border: none;
+    margin-left: -45px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 20px;
+  }
+
+.shopSearch img {
+    width: 20px;
+    margin-top: 3px;
+}
+
+  /*-- Filtre --*/
+  .filter_container {
+    text-align: center;
+  }
+
+.shopButton, .shopButton_active {
+    background-color: #000000;
+    border: none;
+    padding: 10px 50px 10px 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: .1s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shopButton:hover, .shopButton_active  {
+    background-color: #E156A0;
+}
+
+.shopButton:focus {
+    background-color: #83315d;
+}
+
+
+  /* Contenu boutique */
+  .shop_offres_container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  
+  .shopOffres{
+    margin-right: 20px;
+    width: 335px;
+    height: 420px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .2s ease-in-out;
+    box-shadow:  0px 5px 9px 0px #a7a7a79a;
+  }
+
+.shopOffres:hover {
+    transform: scale(1.03);
+}
+
+  .title{
+    width: 1030px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-top: 15px;
+    display: flex;
+    font-weight: bold;
+    margin: 0 auto
+  }
+  
+  .product{
+    font-size: 12px;
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+  
+  .description{
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-top: 15px;
+    display: block;
+    width: 320px;
+  }
+  
+  .price{
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .price:last-of-type{
+    margin-bottom: 15px;
+  }
+  
+  
+  .produit{
+    border-radius: 110px;
+    width: 220px;
+    height: 220px;
+    margin-left: 50px;  
+    object-fit: cover;
+  }
+  
+  .wishlist{
+    width: 27px;
+    height: 25px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 290px;
+    background-image: url("../../img/Wishlist-icon.png");
+    background-repeat: no-repeat;
+  }
+  
+  .wishlist:hover{
+    width: 27px;
+    height: 25px;
+    background-image: url("../../img/wishlist.svg");
+    filter: invert(0.5) sepia(1) saturate(68) hue-rotate(300deg);
+  }
+  
+  .wishlist:active{
+    width: 27px;
+    height: 25px;
+    background-image: url("../../img/wishlist.svg");
+    filter: invert(0.5) sepia(1) saturate(68) hue-rotate(300deg);
+  }
+  
+  /* bouton panier */
+  .button_panier, .button_panier_soldout {
+    width: 335px;
+    height: 41px;
+    color: white;
+    background-color: #E156A0;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .button_panier span, .button_panier_soldout span {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+  }
+  
+  .button_panier img{
+    width: 20px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: -4px;
+    border-radius: 0px;
+  }
+  
+  .button_panier a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .button_panier:hover{
+    transition: background-color ease-in-out 0.8s, color ease-in .4s .6s; 
+    background-color: #83315d;
+    cursor: pointer;
+  }
+  
+  .button_panier:active {
+    background-color: #83315d;
+  }
+
+.button_panier_soldout {
+    background-color: #000000;
+    cursor: default;
+}
+
+/*-- Bouton charger + --*/
+.loadProduct {
+    display: flex;
+    background-color: #E156A0;
+    border: none;
+    padding: 10px 50px 10px 50px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.loadProduct:hover {
+    background-color: #83315d;
+}
+
+
+/*-- FICHE PRODUIT --*/
+
+.product_title {
+  background-color: #000000;
+  width: 200px;
+  height: 300px;
+  color: red;
+}

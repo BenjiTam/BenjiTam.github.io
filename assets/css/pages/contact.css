@@ -1,0 +1,69 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 auto;
+  background-image: url("/img/brique_background.png"); 
+  background-repeat: repeat-x repeat-y;
+  background-color: grey;
+}
+/* Début accueil */
+
+
+main{
+  color: black;
+  margin: 0 auto;
+  width: 100%;  
+  height: 100%;
+}  
+
+
+#background1{
+  background-image: url("../../../img/feuille_lampe.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  background-position: center top;
+
+}
+
+.title{
+    width: 380px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    
+}
+
+#formulaire{
+  width: 400px;
+  height: 505px;
+  background-color: white;
+  display: flex;
+  margin-left: 1160px;
+}
+
+.content_formulaire{
+  justify-content: center;
+}
+
+p{
+  width: 350px;
+  height: 70px;
+  display: block;
+  margin: 0 auto
+}
+
+.form-name{
+  display: block;
+  margin: 0 auto;
+}
+
+label{
+  margin-left: 5px;
+  display: flex;
+}

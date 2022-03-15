@@ -1,0 +1,752 @@
+/*-- COMPTE UTILISATEUR --*/
+
+/*-- CONNEXION | INSCRIPTION --*/
+.mainAccount {
+    margin: 0 auto;
+    width: 1050px;
+    position: center;
+}
+
+.asterisk {
+  color:#E156A0;
+}
+
+#container {
+  background-color: #ffffff;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.titlePage {
+  background-color: #000000;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-weight: bold;
+  margin: 0, auto;
+  margin-top: 25px;
+}
+  
+#contentBloc {
+  background-color: #ffffff;
+  height: auto;
+  margin-bottom: 26px;
+  display: flex;
+}
+ 
+/* Bloc gauche | Connexion */
+.loginBloc {
+  height: auto;
+  width: 381px;
+  margin-right: 75px;
+  margin-left: 107px;
+}
+  
+.hello {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: -10px; 
+  padding-top: 60px;
+  margin-top: 0;
+}
+  
+.loginText  {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
+}
+  
+.login  {
+  font-size: 22px;
+  margin-top: 60px;
+}
+  
+.loginBorder_bottom {
+  border-bottom: 2px solid #DEDEDE;
+  width: 381px;
+  margin-bottom: 20px;
+}
+  
+#userLogin {
+  height: 40px;
+  width: 381px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  
+#userPassword {
+  height: 36px;
+  width: 367px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  
+#userLogin:focus, #userPassword:focus {
+  border: 1px solid #E156A0;
+  outline: none;
+}
+  
+form {
+  font-size: 12px;
+  color: black;
+}
+
+.remember {
+  font-size: 12px;
+  margin-bottom: -2px;
+ }
+
+.forgot {
+  padding-left: 79px;
+  color: #E156A0;
+  }
+
+.loginButton {
+  background-color: #E156A0;
+  height: 48px;
+  width: 381px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  border: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+  
+.loginButton:hover {
+  background-color: #bb4c87;
+}
+
+.loginButton:focus {
+  background-color: #81385f;
+}
+  
+.personelData {   
+  font-size: 14px;
+}
+  
+.politique {
+  color: #E156A0;
+}
+  
+/* Bloc droit | Inscription */
+.signInBloc {
+  width: 381px;
+  margin-top: 29px;
+}
+
+.noMember {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 65px;
+  margin-bottom: -10px;
+}
+
+.remember2 {
+  text-align: end;
+  font-size: 12px;
+  margin-bottom: -2px;
+}
+
+.loginBorder_bottom {
+  border-bottom: 2px solid #DEDEDE;
+  width: 381px;
+  margin-bottom: 20px;
+}
+
+/* Formulaire | Connexion - Inscription */
+.inputLoginSignin{
+  padding-left: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+} 
+
+input[type="text"]{
+  font-size: 12px;
+  color: #333; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box; 
+}
+  
+/* -- Conexion via Google | Facebook --*/
+.socialBorder_bottom {
+  border-bottom: 2px solid #DEDEDE;
+  width: 870px;
+  margin-left: 75px;
+}
+
+.socialLogin, .socialOu  {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.socialOu {
+  margin-right: 30px;;
+}
+
+.button_icon {
+  padding-right: 10px;
+  padding-left: 20px;
+  margin-top: -4px;
+}
+
+.socialButton {
+  height: 40px;
+  width: 300px;
+  display: inline-flex;
+  border: 2px #000000 solid;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  display: inline-flex;
+  justify-items: center;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}
+
+.socialButton:hover {
+  border: 2px #ffffff solid;
+  filter: invert(1) sepia(1) saturate(0) hue-rotate(175deg);
+}
+
+
+/* -- COMPTE | UTILISATEUR --*/
+#containerAccount {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* Navigation Compte utilisateur */
+.userNav_title {
+  background-color: #000000;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-weight: bold;
+  margin-bottom: 10p ;
+}
+
+.userNav {
+  background-color: #ffffff;
+  height: 280px;
+  width: auto;
+  margin-right: 38px;
+  text-decoration: none;
+}
+
+.userNav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.userNav li {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-left: -20px;
+}
+
+.userNav a {
+  color:black;
+}
+
+.userNav a:hover {
+  font-weight: bold;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+.userNav_cat span {
+  width: auto;
+}
+
+.userNav_border {
+  border-bottom: 1px solid #DEDEDE;
+  width: 260px;
+  margin-left: -25px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.userNav img {
+  width: auto;
+  height: auto;
+  margin-right: 0;
+  float: left;
+  padding-right: 10px;;
+}
+
+
+/*-- COMPTE | MES INFORMATIONS --*/
+.user_title {
+  background-color: #000000;
+  width: 680px;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-weight: bold;
+}
+
+.userContainer {
+  background-color: #ffffff;
+  height: auto;
+  width: 700px;
+}
+
+/* Récap utilisateur */
+.userAccount_recap {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.accountUser {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: -16px;
+}
+
+.accountName {
+  font-size: 18px;
+  margin-bottom: -16px;
+}
+
+.accountMember {
+  color: #E156A0;
+  font-size: 18px;
+}
+
+.userAccount_border {
+  border-bottom: 2px solid #DEDEDE;
+  width: 610px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  Civilité */
+.civility {
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.userM {
+  margin-right: 26px;
+}
+
+/* Formulaire | Informations utilisateur */
+.accountUser_infos {
+  margin-left: 60px;
+}
+
+.accountUser_zone1 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+.labelAccount {
+display: table-cell;
+padding-bottom: 5px;
+}
+
+.inputAccount {
+  margin-bottom: 22px;
+  width: 270px;
+  height: 35px;
+  background-color: #F5F5F5;
+  border: none;
+  color: #4b4b4b;
+  margin-right: 34px;
+  padding-left: 10px;
+}
+
+.checkOffers {
+  margin-top: 16px;
+  float: left;
+  position: absolute;
+}
+
+.checkUser {
+  float: left;
+  margin-right: 10px;
+  margin-top: -1px;
+}
+
+.accountButton, .accountButton_mdp {
+  background-color: #E156A0;
+  height: 41px;
+  padding-top: 5px;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  border: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  margin-left: 395px;
+}
+
+.accountButton_mdp {
+  float: right;
+  margin-top: -59px;
+  margin-right: 68px;
+  margin-bottom: 50px;
+}
+  
+.accountButton:hover {
+  background-color: #bb4c87;
+}
+
+.accountButton:focus {
+  background-color: #81385f;
+}
+
+input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
+  font-size: 12px;
+  color: #333; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box; 
+}
+
+.inputAccount:focus {
+  border: 1px solid #E156A0;
+  outline: none;
+}
+
+.infoNew_mdp  {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/*-- COMPTE | HISTORIQUE COMMANDES --*/
+.historyTable {
+  display: table-cell;
+}
+
+
+
+
+
+/*-- COMPTE | ADRESSE DE LIVRAISON --*/
+.userText_info {
+  margin-left: 20px;
+  font-size: 16px;
+  width: 630px;
+}
+
+.adress_recap {
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 14px;
+  display: flex;
+  padding-left: 20px;
+
+}
+
+.userAdress_1 {
+  padding-left: 10px;
+  padding-right: 40px;
+  font-weight: bold;
+}
+
+.username_check {
+  margin-top: 50px ;
+}
+
+.userLocation {
+  margin-bottom: -5px;
+  color: #2E2E2E;
+}
+
+.delivery {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 460px;
+}
+
+.delivery_img {
+  padding-right: 5px;
+}
+
+.delivery a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.accountButton_add{
+  background-color: #E156A0;
+  height: 41px;
+  width: 250px;
+  padding-top: 5px;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  margin-right: 45px;
+  color: #ffffff;
+  border: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  float: right;
+}
+
+  
+.accountButton_add:hover {
+  background-color: #bb4c87;
+}
+
+.accountButton_add:focus {
+  background-color: #81385f;
+}
+
+
+/*-- COMPTE | WISHLIST --*/
+.user_titleWl {
+  background-color: #000000;
+  width: 680px;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+/* Contenu wishlist */
+.wishlist_container{
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.wishlist_offres{
+  margin-left: 25px;
+  width: 193px;
+  height: 260px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.wishlist_offres:first-of-type{
+  margin-left: 0px;
+}
+
+.wishlist_product{
+  font-size: 12px;
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+.wishlist_description{
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  width: 186px;
+}
+
+.wishlist_price{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wishlist_produit{
+  border-radius: 110px;
+  width: 112px;
+  height: 112px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.wishlist_wishlist{
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: -15px;
+  background-image: url("../../img/defaultWishlist.png");
+  background-repeat: no-repeat;
+}
+
+.wishlist:hover{
+  background-image: url("../../img/defaultWishlist_b.png");
+}
+
+/* bouton panier */
+.wishlist_button_panier {
+  width: 193px;
+  height: auto;
+  color: white;
+  background-color: #E156A0;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wishlist_button_panier span{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.wishlist_button_panier img{
+  width: 12px;
+  height: auto;
+  margin-left: 0px;
+  margin-top: -2px;
+  border-radius: 0px;
+}
+
+.wishlist_button_panier a{
+  text-decoration: none;
+  color: white;
+}
+
+.wishlist_button_panier:hover{
+  background-color: #bb4c87;
+  cursor: pointer;
+}
+
+.wishlist_button_panier:active {
+  background-color: #83315d;
+}
+
+.wishlist_button_rupture {
+  width: 193px;
+  height: auto;
+  color: white;
+  background-color: #000000;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wishlist_button_rupture span{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+
+
+
+/* WISHLIST | VIDE */
+.userContainer_wishlist_none {
+  height: auto;
+  width: 700px;
+  margin-bottom: 32px;
+  background-color: #ffffff;
+}
+
+.wishlistText  {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.userAccount_borderWishlist {
+  border-bottom: 2px solid #DEDEDE;
+  width: 670px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Smiley */
+.smileySad {
+  display: flex;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bouton retour */
+.return  {
+  border: 2px #000000 solid;
+  background-color: #ffffff;
+  padding: 4px 20px 5px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}
+
+.return:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

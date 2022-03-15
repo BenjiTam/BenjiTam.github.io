@@ -1,0 +1,135 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    background-image: url("/img/brique_background.png"); 
+}
+  
+main{
+      color: black;
+      width: 100%;  
+      height: 100%;
+      background-size: cover;
+      margin: 0 auto;
+}  
+
+#background_ventes{
+    background-image: url("../../../img/feuille_lampe.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: center top;
+}
+
+#point_ventes{
+    background-color: white;
+    width: 1050px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.title{
+    width: 1010px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding-left: 40px;
+    display: flex;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+
+#point_ventes p{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.partenaires{
+    margin-left: 40px;
+    margin-top: 40px;
+    column-rule: 1px solid #E3E3E3;
+    column-count: 3;
+    column-gap: 20px;
+    column-fill: balance;
+    width: 940px;
+    height: 460px;
+    justify-content: space-between;
+}
+
+h3{
+    color: #E156A0;
+    display: flex;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.localisation img{
+    display: flex;
+    height: auto;
+
+}
+
+.localisation{
+    font-size: 12px;
+    display: flex;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.partenarias {
+    display: block;
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 35px;
+    white-space: pre;
+}
+
+#creations {
+    margin-left: 600px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#arrow{
+    margin-left: 750px;
+}
+
+.button_contact {
+    width: 335px;
+    height: 40px;
+    color: white;
+    background-color: #E156A0;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 600px;   
+}
+
+.button_contact span{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.button_contact:hover{
+    transition: background-color ease-in-out 0.8s, color ease-in .4s .6s; 
+    background-color: #83315d;
+    cursor: pointer;
+  
+  }
+  
+  .button_:active {
+    background-color: #83315d;
+    box-shadow: 0 5px rgb(151, 151, 151);
+    transform: translateY(4px);
+  }
+  

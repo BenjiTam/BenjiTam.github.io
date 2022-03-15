@@ -1,0 +1,52 @@
+body { 
+    margin: 0 auto;
+    background-image:url("/img/background/Background-02.jpg");
+    background-size: cover; 
+    font-size: 20px;
+    font-family: 'Courier New', Arial, Courier, monospace;
+    font-weight: bold;
+    color: #000000;
+}
+
+main {
+    text-align: center;
+}
+
+.logo {
+    margin-top: 78px;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: -20px;
+}
+
+/* RESEAUX SOCIAUX */
+.footerNetwork {
+    text-align: center;
+    margin-left: -40px;
+}
+
+.follow  { 
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+#socialNetwork li {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.iconColor {
+    transition: .1s ease-in-out;
+}
+
+.iconColor:hover { 
+    filter: invert(0.5) sepia(1) saturate(2) hue-rotate(285deg);
+}

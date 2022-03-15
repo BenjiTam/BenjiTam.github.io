@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/main.css"> <!-- CSS Global-->
+  <link rel="stylesheet" href="../assets/css/users.css"> <!-- CSS Login & Compte Utilisateur-->
+  <link rel="stylesheet" href="../assets/css/pages/home.css">
+  <link rel="stylesheet" href="../assets/css/header_footer.css"> <!-- CSS Header | Footer -->
+  <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
+  <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
+  <script type="module" src="../assets/js/footer.js" defer></script> <!-- JS | Charge le footer-->
+  <title>Adresses de livraisons | Les ateliers de Lilo</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <main-header current="home"></main-header>
+
+  <!-- Contenu -->
+  <main class="mainAccount">
+    <div class="breadcrumbs">Accueil > Mon compte > <strong>Adresses de livraisons</strong></div>
+    <!-- BLOC GLOBAL-->
+    <div id="containerAccount">
+      <!-- Navigation | Gauche -->
+      <nav class="userNav">
+        <div class="userNav_title">Votre Compte</div>
+        <ul class="userNav">
+          <li>
+            <a class="userNav"  href="account.html">
+              <img src="/img/usersInfos.svg" alt="">
+              <span class="userNav_cat">Mes informations</span>
+            </a>
+          </li>
+          <div class="userNav_border"></div>
+            <li>
+              <a class="userNav" href="historique.html">
+                <img src="/img/historiqueCmd.svg" alt="">
+                <span class="userNav_cat">Mes commandes</span>
+              </a>
+            </li>
+            <div class="userNav_border"></div>
+              <li>
+                <a class="userNav active" href="livraisons.html">
+                  <img src="/img/livraison.svg" alt="">
+                  <span class="userNav_cat">Adresses de livraisons</span>
+                </a>
+              </li>
+              <div class="userNav_border"></div>
+                <li>
+                  <a class="userNav" href="wishlist.html">
+                    <img class="userNav" src="/img/Wishlist-icon.svg" alt="">
+                    <span class="userNav_cat">Wishlist</span>
+                  </a>
+                </li>
+                <div class="userNav_border"></div>
+                  <li>
+                    <a class="userNav" href="index.html">
+                      <img src="/img/logout.svg" alt="">
+                      <span class="userNav_cat">Déconnexion</span>
+                    </a>
+                  </li>
+          </ul>
+      </nav>
+
+      <!-- BLOC DROIT INFOS-->
+      <div class="userContainer">
+        <div class="user_title">Adresses de livraisons</div>
+
+        <div class="userText_info">
+            <p>Retrouvez ici les adresses enregistrées lors de vos précédents achats sur le site.</p>
+        </div>
+
+        <div class="userAccount_border"></div>
+
+        <div class="adress_recap">
+          <form class="username_check">
+            <input type="radio" checked="checked" name="civility" id="userAdress_1"> 
+            <label for="civility" class="userAdress_1">M. RABBIT Roger</label>
+          </form>
+            <div class="userAdress_2">
+                <p class="userLocation">846 North Cahuenga Boulevard</p>
+                <p class="userLocation">90087 TOONVILLE</p>
+                <p class="userLocation">États-Unis</p>
+                <p class="userLocation">Tel: 0478.58.93.02</p>
+            </div>
+        </div>
+
+        <div class="delivery"> 
+            <a href="#"><img class="delivery_img" src="/img/edit.svg" alt="editer">Editer</a>
+            <a href="#"><img class="delivery_img" src="/img/delete.svg" alt="supprimer">Supprimer</a>
+    </div>
+    <div class="userAccount_border"></div>
+
+    <div class="adress_recap">
+      <form class="username_check">
+        <input type="radio"  name="civility1" id="userAdress_1"> 
+        <label for="civility1" class="userAdress_1">M. RABBIT Roger</label>
+      </form>
+        <div class="userAdress_2">
+            <p class="userLocation">34 Boulevard du Parc</p>
+            <p class="userLocation">77700 DINSEYLAND</p>
+            <p class="userLocation">France</p>
+            <p class="userLocation">Tel: 08.25.30.05.00</p>
+        </div>
+    </div>
+
+    <div class="delivery"> 
+        <a href="#"><img class="delivery_img" src="/img/edit.svg" alt="editer">Editer</a>
+        <a href="#"><img class="delivery_img" src="/img/delete.svg" alt="supprimer">Supprimer</a>
+</div>
+
+        <div class="userAccount_border"></div>
+        <button class="accountButton_add">Ajouter une adresse</button>
+
+
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <main-footer current="contact"></main-footer>
+  
+</body>
+</html>
