@@ -86,6 +86,10 @@ main{
   margin-left: 15px;
 }
 
+.pola_background:first-of-type{
+  margin-left: 0px;
+}
+
 .pola_background span{
     margin: 175px;
     display: flex;
@@ -441,15 +445,13 @@ h3{
 /* Atelier css  */
 
 #ateliers_bg{
-  height: 1000px;
+  height: 1300px;
 }
 
-#galerie_polaroid{
+.galerie1{
   margin-top: 60px;
   display: flex;
   justify-content: center;
-  height: 1000px;
-  
 }
 
 #atelier_créatif {
@@ -457,7 +459,11 @@ h3{
   width: 875px;
   height: 150px;
   margin: 0 auto;
+}
 
+#content_atelier{
+  margin: 0 auto;
+  height: 800px;
 }
 
 #atelier_créatif .title{
@@ -484,13 +490,12 @@ h3{
   background-color: #FFF5C3;
   opacity: 70%;
   display: flex;
-  margin-left: 45px;
+  margin-left: 65px;
   margin-top: -10px;
   transform: rotate(5deg);
 }
 
 .atelier_img{
-    width: 240px;
     height: 190px;
     justify-content: center;
     display: flex;
@@ -500,6 +505,12 @@ h3{
   width: 200px;
   height: 180px;
   object-fit: cover;
+}
+
+.polaroid_rangee{
+  display: flex;
+  margin-top: 250px;
+  margin: 0 auto;
 }
 
 
