@@ -53,17 +53,93 @@ main{
 
 p{
   width: 350px;
-  height: 70px;
-  display: block;
-  margin: 0 auto
-}
-
-.form-name{
+  height: 60px;
   display: block;
   margin: 0 auto;
+  font-size: 12px;
 }
 
 label{
-  margin-left: 5px;
   display: flex;
+}
+
+.formulaire_descriptif{
+  margin-top: 15px;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;  
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.formulaire_descriptif input{
+  padding-left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid black;
+}
+
+#name{
+  margin-bottom: 20px;
+  width: 350px;
+  height: 20px;
+}
+
+#prenom{
+  margin-bottom: 20px;
+  width: 350px;
+  height: 20px;
+}
+
+#email{
+  margin-bottom: 20px;
+  width: 350px;
+  height: 20px;
+}
+
+#commentaires{
+  margin-bottom: 20px;
+  width: 350px;
+  height: 150px;
+}
+
+.bordure2{
+  border: 1px solid #EBEBEB;
+  width: 360px;
+  margin: 0 auto;
+}
+
+
+
+.send_me{
+  width: 280px;
+  height: 25px;
+  color: white;
+  padding-top: 8px;
+  background-color: #E156A0;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  
+}
+
+.send_me a{
+  text-decoration: none;
+  color: white;
+}
+
+.send_me:hover{
+  transition: background-color ease-in-out 0.8s, color ease-in .4s .6s; 
+  background-color: #83315d;
+  cursor: pointer;
+
+}
+
+.send_me:active {
+  background-color: #83315d;
+  box-shadow: 0 5px rgb(151, 151, 151);
+  transform: translateY(4px);
 }
