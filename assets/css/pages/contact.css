@@ -15,7 +15,6 @@ main{
   height: 100%;
 }  
 
-
 #background1{
   background-image: url("../../../img/feuille_lampe.png");
   background-repeat: no-repeat;
@@ -25,7 +24,126 @@ main{
 
 }
 
-.title{
+#faq_formulaire{
+  display: flex;
+  width: 590px;
+}
+
+.title_left{
+  width: 570px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-top: 15px;
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 15px;
+
+}
+
+
+
+.active, .questions_ask:last-of-type{
+  margin-bottom: 900px;
+
+}
+
+.active, .title_left2{
+  display: block;
+  margin-top: -90px;
+}
+
+
+/*  accordion */
+
+.accordion {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  width: 590px;
+  height: 50px;
+  background-color: black;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: block;
+  color: white;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active, .accordion:hover {
+  background-color: #83315d;
+  
+}
+
+
+.pannel{
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 15px;
+  color: #777;
+  margin-left: 540px;
+  margin-top: -10px;
+  
+}
+
+.active:after {
+  content: "\2212";
+  background-color: none;
+}
+
+.active, .pannel::after{
+}
+.active, .accordion:after {
+  background-color: #E156A0;
+  
+  
+}
+
+/*  */
+
+.title_commande{
+  width: 570px;
+  height: 30px;
+  padding-left: 20px;
+  padding-top: 15px;
+  color: white;
+  background-color: #E156A0;
+  font-size: 14px;
+}
+
+.questions_ask{
+  width: 590px;
+  height: 180px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.questions_ask p{
+  width: 500px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formulaire & cie */
+
+.title_right{
     width: 380px;
     height: 30px;
     background-color: black;
@@ -35,8 +153,8 @@ main{
     font-weight: bold;
     display: flex;
     margin: 0 auto;
-    margin-bottom: 25px;
-    
+    margin-bottom: 15px;
+
 }
 
 #formulaire{
@@ -44,7 +162,11 @@ main{
   height: 505px;
   background-color: white;
   display: flex;
-  margin-left: 1160px;
+  margin-left: 100px;
+}
+
+#foire_questions{
+  margin-left: 425px;
 }
 
 .content_formulaire{
@@ -57,10 +179,7 @@ p{
   display: block;
   margin: 0 auto;
   font-size: 12px;
-}
-
-label{
-  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .formulaire_descriptif{
@@ -71,34 +190,41 @@ label{
   font-family: 'Courier New', Courier, monospace;
 }
 
-.formulaire_descriptif input{
-  padding-left: 10px;
-  font-family: 'Courier New', Courier, monospace;
-  border: 2px solid black;
-}
-
 #name{
   margin-bottom: 20px;
   width: 350px;
   height: 20px;
+  padding-left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid black;
 }
 
 #prenom{
   margin-bottom: 20px;
   width: 350px;
   height: 20px;
+  padding-left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid black;
 }
 
 #email{
   margin-bottom: 20px;
   width: 350px;
   height: 20px;
+  padding-left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid black;
 }
 
 #commentaires{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 350px;
   height: 150px;
+  border: 2px solid black;
+  padding-left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  resize: none;
 }
 
 .bordure2{
@@ -108,12 +234,11 @@ label{
 }
 
 
-
 .send_me{
   width: 280px;
-  height: 25px;
+  height: 35px;
   color: white;
-  padding-top: 8px;
+  padding-top: 5px;
   background-color: #E156A0;
   text-transform: uppercase;
   border: none;

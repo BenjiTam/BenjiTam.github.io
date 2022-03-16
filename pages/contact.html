@@ -9,6 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
   <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
   <script type="module" src="../assets/js/footer.js" defer></script> <!-- JS | Charge le footer-->
+  <script type="module" src="/assets/js/accordion.js" defer></script> <!-- JS | Charge l'accordion contact-->
   <title>Projet | UX | Contact</title>
 </head>
 <body>
@@ -16,40 +17,78 @@
   <main>   
     <div class="breadcrumbs">Accueil ><strong> Contactez-moi | FAQ </strong></div>
      
-        <div id="formulaire">
-          
-            <div class="content_formulaire">  
-              <div class="title"> Contactez-moi </strong></div>
+    <div id="faq_formulaire">
+      <div id="foire_questions">
+        <div class="title_left"> FAQ | Foire aux questions</div>
+        <div class="questions_ask">
+            <div class="title_commande"> Commande | Questions </div>
+            <p>Sauf spécification contraire, tous nos produits bénéficient de la clause “satisfait ou remboursé”. Les reprises ne peuvent être faites qu’après notre accord préalable écrit, pour des marchandises à l’état neuf et en emballage d’origine, livrées depuis moins de 30 jours, retournées franco de port et d’emballage, avec indication des ...
+            </p>
+        </div>  
+        <div class="questions_ask">
+            <div class="title_commande"> Paiement | Questions </div>
+            <p>Vous avez plusieurs possibilités pour régler vos achats.
+              Indiquez ici les moyens de paiement que vous acceptez comme par exemple :
+              <br>
+              • Le paiement par carte bancaire
+              <br>
+              • Le paiement par virement
+              <br>
+              • Les chèques bancaires
+              <br>
+              • etc.
+            </p>
+        </div>  
+        
+        <button class="accordion">Envois & Livraisons | Questions</button>
+        <div class="pannel"> 
+        <p class="hidden_text">Sauf spécification contraire, tous nos produits bénéficient de la clause “satisfait ou remboursé”. Les reprises ne peuvent être faites qu’après notre accord préalable écrit, pour des marchandises à l’état neuf et en emballage d’origine, livrées depuis moins de 30 jours, retournées franco de port et d’emballage, avec indication des ...
+        </p>
+      </div>
+        
+        <button class="accordion">
+          <div class="pannel"> Produits | Questions</div>
+        </button>
+        <button class="accordion">
+          <div class="pannel"> E-shop | Questions</div>
+        </button>
+        
+
+
+      </div>
+
+          <div id="formulaire">
             
-              <p>Pour tous conseils/ renseignements , questions ou autres, 
-                je suis à votre disposition , 
-                il y a toujours une solution adapté à vos besoins ! </p>
+              <div class="content_formulaire">  
+                <div class="title_right"> Contactez-moi</div>
+              
+                <p>Pour tous conseils/ renseignements , questions ou autres, 
+                  je suis à votre disposition , 
+                  il y a toujours une solution adapté à vos besoins ! </p>
 
-                <div class="bordure2"></div>
+                  <div class="bordure2"></div>
 
-              <div class="formulaire_descriptif">
-                <form action="" method="get" class="form-name">
-                  <div class="form-name">
-                    <input type="text" name="name" id="name" required placeholder="Ton nom">
-                  </div>
-                  <div class="form-name">
-                    <input type="text" name="prenom" id="prenom" required placeholder="Ton prénom">
-                  </div>
-                  <div class="form-name">
-                    <input type="email" name="email" id="email" required placeholder="Ton adresse mail">
-                  </div>
-                  <div class="form-name">
-                    <input type="textarea" name="commentaires" id="commentaires" required placeholder="Ton message" maxlength="150">
-                  </input>
-                </form>
+                <div class="formulaire_descriptif">
+                  <form action="mailto:email@example.com" method="post" class="form-name">
+                    <div class="form-name">
+                      <input type="text" name="name" id="name" required placeholder="Ton nom">
+                    </div>
+                    <div class="form-name">
+                      <input type="text" name="prenom" id="prenom" required placeholder="Ton prénom">
+                    </div>
+                    <div class="form-name">
+                      <input type="email" name="email" id="email" required placeholder="Ton adresse mail">
+                    </div>
+                    <div class="form-name">
+                      <textarea name="textarea" id="commentaires" required placeholder="Ton message"  minlength="30" maxlength="430"></textarea>
+                      <input type="submit" value="Envoyer" action="mailto:email@example.com" class="send_me"></input>
+                  </form>
+                </div>
 
-                <a href="#" class="send_me">Envoyer</a>
-            
+              
               </div>
-
-            
-            </div>
-        </div>
+      </div>
+    </div>
   </main>   
   <main-footer current="contact"></main-footer>
 </body>
