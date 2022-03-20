@@ -76,7 +76,11 @@ main{
   display: flex;
   justify-content: center;
   text-align: center;
-  
+}
+
+.pola_background:hover {
+  transform: rotate(2deg);
+
 }
 
 .pola_background{
@@ -84,6 +88,7 @@ main{
   height: 210px;
   background-color: white;
   margin-left: 15px;
+  transition: .2s ease-in-out;
 }
 
 .pola_background:first-of-type{
@@ -94,7 +99,11 @@ main{
     margin: 175px;
     display: flex;
     font-weight: 16px;
-  
+}
+
+.pola_background a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .Lilo {
@@ -102,14 +111,17 @@ main{
   height: 190px;
   justify-content: center;
   display: flex;
+  margin-top: -8px;
   background-image: url("/img/Lilo.png");
 }
+
 
 .Bijoux {
   width: 244px;
   height: 190px;
   justify-content: center;
   display: flex;
+  margin-top: -8px;
   background-image: url("/img/Lilo_bijoux.png");
 }
 .Badges {
@@ -117,6 +129,7 @@ main{
   height: 190px;
   justify-content: center;
   display: flex;
+  margin-top: -8px;
   background-image: url("/img/Lilo_badges.png");
 }
 .Papeterie {
@@ -124,6 +137,7 @@ main{
   height: 190px;
   justify-content: center;
   display: flex;
+  margin-top: -8px;
   background-image: url("/img/Lilo_papeterie.png");
 }
 
@@ -150,6 +164,11 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: .2s ease-in-out;
+}
+
+.offres:hover {
+  transform: scale(1.03);
 }
 
 .offres:first-of-type{
@@ -157,17 +176,16 @@ main{
 }
 
 .title{
-
   width: 1030px;
-  height: 30px;
   background-color: black;
   color: white;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   font-weight: bold;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .product{
@@ -210,8 +228,8 @@ main{
   width: 27px;
   height: 25px;
   position: absolute;
-  margin-top: -15px;
-  margin-left: 280px;
+  margin-top: -25px;
+  margin-left: 290px;
   background-image: url("../../img/Wishlist-icon.png");
   background-repeat: no-repeat;
 }
@@ -290,6 +308,8 @@ main{
 }
 
 
+
+  
 
 /* margin: 25px 50px 75px 100px;
 top margin is 25px
@@ -391,11 +411,12 @@ h3{
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+  transition: .1s ease-in-out;
 }
 
 .Button_Voir:hover{
   color:#83315d;
-  font-size: 18px;
+  transform: scale(1.02);
 }
 
 .button_event {

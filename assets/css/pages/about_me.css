@@ -1,7 +1,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
-    background-image: url("/img/brique_background.png"); 
+    background-image: url("/img/brique_bg.png"); 
     background-repeat: repeat-x repeat-y;
     background-color: grey;
   }
@@ -10,9 +10,16 @@ body{
   main{
     color: black;
     margin: 0 auto;
-    width: 100%;  
-    height: 100%;
 }  
+
+#background_about{
+    background-image: url("../../../img/background/bg_about_me.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center top;  
+    width: 1920px;
+    height: 1024px;
+  }
 
 .title{
     width: 370px;
@@ -30,16 +37,111 @@ body{
 }
 
 #content_about{
-    width: 390px;
-    height: 550px;
-    margin-left: 200px;
-    margin-top: 60px;
-    background-color: white;
-    font-size: 12px;
+    display: flex;
+    justify-content:center;
 }
 
-#content_about p{
+.taped{
+    width: 120px;
+    height: 45px;
+    background-color: #FFF5C3;
+    opacity: 60%;
+    display: flex;
+    margin-left: 160px;
+    margin-top: -20px;
+    transform: rotate(-5deg);
+  }
+
+.lilo_about{
+    width: 390px;
+    height: 550px;
+    background-color: white;
+    font-size: 12px;
+    margin-left: 25px;
+}
+
+.lilo_about p{
     margin-left: 20px;
     margin-right: 30px;
     margin-bottom: 20px;
+}
+
+
+#signature{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 40px;
+    opacity: 0%;
+    transition: 2s ease-in-out;
+}
+
+#signature:hover{
+    opacity: 100%;
+}
+
+.doigts{
+    margin-left: 390px;
+    margin-top: -150px;
+}
+
+
+.polaroid_bg{
+    width: 440px;
+    height: 340px;
+    background-color: white;
+    margin-left: 15px;    
+    margin-left: 250px;
+    transform: rotate(5deg);
+    text-align: center;
+    
+}
+
+.polaroid_bg:hover{
+    
+    transform: rotate(-5deg);
+}
+
+.polaroid_bg button:first-of-type{
+    margin-left: 0px;
+}
+
+#its_me{
+    display: flex;
+    margin-left: -220px;
+    margin-top: 50px;
+}
+
+#carte_papet img{
+    margin-left: -500px;
+    margin-top: 680px;
+    border-radius: 5%;
+    transform: rotate(-2deg);
+}
+
+#carte_papet img:hover{
+    transform: rotate(2deg);
+}
+
+#bijoux_img img{
+    margin-left: -210px;
+    margin-top: 730px;    
+    border-radius: 30%;
+    width: 120px;
+    transform: rotate(5deg);
+}
+
+#bijoux_img img:hover{
+    transform: rotate(-5deg);
+}
+
+.Lilo_face{
+    justify-content: center;
+}
+
+.Lilo_face img{
+    width: 420px;
+    height: 300px;
+    object-fit: contain;
+    margin-left: 5px;
+    margin-top: -200px;
 }

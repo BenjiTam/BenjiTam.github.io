@@ -44,18 +44,6 @@ main{
 }
 
 
-
-.active, .questions_ask:last-of-type{
-  margin-bottom: 900px;
-
-}
-
-.active, .title_left2{
-  display: block;
-  margin-top: -90px;
-}
-
-
 /*  accordion */
 
 .accordion {
