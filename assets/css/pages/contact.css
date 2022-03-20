@@ -16,7 +16,7 @@ main{
 }  
 
 #background1{
-  background-image: url("../../../img/feuille_lampe.png");
+  background-image: url("../../../img/Background-04.webp");
   background-repeat: no-repeat;
   margin: 0 auto;
   background-size: contain;
@@ -26,7 +26,8 @@ main{
 
 #faq_formulaire{
   display: flex;
-  width: 590px;
+  justify-content: center;
+
 }
 
 .title_left{
@@ -58,9 +59,7 @@ main{
 /*  accordion */
 
 .accordion {
-  cursor: pointer;
   border: none;
-  outline: none;
   transition: 0.4s;
   width: 590px;
   height: 50px;
@@ -69,49 +68,12 @@ main{
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 15px;
+  padding-left: 20px;
   display: block;
   color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-.active, .accordion:hover {
-  background-color: #83315d;
-  
-}
-
-
-.pannel{
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-
-}
-
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 15px;
-  color: #777;
-  margin-left: 540px;
-  margin-top: -10px;
-  
-}
-
-.active:after {
-  content: "\2212";
-  background-color: none;
-}
-
-.active, .pannel::after{
-}
-.active, .accordion:after {
-  background-color: #E156A0;
-  
-  
-}
 
 /*  */
 
@@ -163,10 +125,6 @@ main{
   background-color: white;
   display: flex;
   margin-left: 100px;
-}
-
-#foire_questions{
-  margin-left: 425px;
 }
 
 .content_formulaire{

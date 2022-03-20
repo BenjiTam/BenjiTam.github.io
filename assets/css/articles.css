@@ -1,20 +1,30 @@
-/*-- NEWS --*/
-.news {
-    margin-left: 0;
-    margin-right: 0;
+/*-- LES NEWS (news/agenda.html) --*/
+.news_zone {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
 }
 
-
-.newsBloc {
+.newsBloc, .newsBloc_small, .newsBloc_fakeMove {
     background-color: #ffffff;
     width: 512px;
-    height: 490px;
+    height: auto;
     margin-top: 50px;
+    margin-left: 25px;
+}
+
+.newsBloc_small {
+   margin-bottom: 50px;
+   height: 270px;
+}
+
+.newsBloc_small p {
+    padding-left: 20px;
+    width: 480px;
 }
 
 .newsTitle {
     background-color: #000000;
-
     color: #ffffff;
     font-size: 16px;
     padding-top: 18px;
@@ -22,9 +32,21 @@
     padding-left: 20px;
 }
 
+.newsBloc_fakeMove {
+    margin-top: -150px;
+    float: right;
+    height: 471px;
+}
+
 .newsIllustration {
     background-color: #949494;
     background-image: url(/img/news/header_news01.jpg);
+    height: 312px;
+}
+
+.newsIllustration1 {
+    background-color: #949494;
+    background-image: url(/img/news/header_news02.jpg);
     height: 312px;
 }
 
@@ -40,11 +62,69 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.articleButton:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.article_infos, .article_infos_small {
+    font-size: 14px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.article_infos, .article_infos_small {
+    padding-left: 20px;
+}
+
+.share_social, .share_social_small {
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.share_social img {
+    margin-right: -5px;
+}
+
+.articles_scotch_topLeft, .articles_scotch_bottomRight {
+    background-image: url(/img/news/sticker02_bg.png);
+    width: 43px;
+    height: 55px;
+    position: absolute;
+    display: flex;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+.articles_scotch_left, .articles_scotch_right  {
+    background-image: url(/img/news/sticker01_bg.png);
+    width: 23px;
+    height: 73px;
+    position: absolute;
+    display: flex;
+    margin-left: -12px;
+    margin-top: 125px;
+}
+
+.articles_scotch_right {
+    margin-left: 500px;
+    margin-top: 125px;
 }
 
 
 
-/*--- ARTICLES --*/
+
+.articles_scotch_bottomRight {
+     margin-left: 490px;
+}
+
+/*--- ARTICLES  (article.html) --*/
 .articles_container {
     background-color: #ffffff;
     margin-left: auto;
@@ -62,7 +142,6 @@
     margin-left: 378px;
     margin-top: -20px;
 }
-
 
 .articles_titles {
     background-color: #000000;
@@ -143,4 +222,8 @@
 
 .articles_infoShare li{
     display: inline;
+}
+
+.btn_event_na {
+    margin-bottom: 30px;
 }

@@ -1,5 +1,9 @@
 /* -- CSS TEMPORAIRE BOUTIQUE --*/
 
+main { /*-- Largeur du contenu (Figma) --*/
+  width: 1050px;
+}
+
 #boutique{
     margin-top: 30px;
     width: 1050px;
@@ -240,10 +244,135 @@ input[type="search"] {
 
 
 /*-- FICHE PRODUIT --*/
+.productSheet {
+  margin-top: 50px;  
+  display: flex;
+  justify-content: center;
+}
+
+.productGalery img {
+  height: 433px;
+  width: 430px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+.preview_product {
+text-align: center;
+margin-right: 75px;
+}
+
+.preview_product img {
+  height: 52px;
+  width: 52px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.productDetails {
+  margin-top: 50px;
+}
 
 .product_title {
   background-color: #000000;
-  width: 200px;
-  height: 300px;
-  color: red;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-weight: bold;
+  margin: 0, auto;
+  margin-bottom: 15px;
+}
+
+.product_informations {
+  background-color: #ffffff;
+  height: auto;
+  width: 600px;
+  margin-bottom: 15px;
+}
+
+.addCard_product {
+  width: 600px;
+  height: 41px;
+  color: white;
+  background-color: #E156A0;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.addCard_product span {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.addCard_product img {
+  width: 20px;
+  height: auto;
+  margin-left: 0px;
+  margin-top: -4px;
+  border-radius: 0px;
+}
+
+.addCard_product:hover {
+  background-color: #bb4c87;
+}
+
+.product_name {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 14px;
+  margin-left: 14px;
+}
+
+.product_informations img { /*- wishlist icon -*/
+  float: right;
+  margin-top: -40px;
+  margin-right: 14px;
+}
+
+.product_informations img:hover{
+  width: 27px;
+  height: 25px;
+  background-image: url("../../img/Wishlist-icon.png");
+  filter: invert(0.5) sepia(1) saturate(68) hue-rotate(300deg);
+}
+
+.product_text {
+  margin-left: 14px;
+  width: 480px;
+  font-size: 16px;
+}
+
+.product_description {
+  font-size: 16px;
+  color: #2E2E2E;
+  margin-left: 14px;
+  padding-bottom: 20px;
+}
+
+.product_price {
+  margin-top: -5px;
+  margin-left: 14px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.product_taxes {
+  float: right;
+  margin-top: -48px;
+  margin-right: 14px;
 }
