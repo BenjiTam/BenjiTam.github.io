@@ -1,5 +1,4 @@
-/*-- COMPTE UTILISATEUR --*/
-
+/*-- COMPTE UTILISATEUR | CSS --*/
 /*-- CONNEXION | INSCRIPTION --*/
 .mainAccount {
     margin: 0 auto;
@@ -52,7 +51,7 @@
   margin-top: 0;
 }
   
-.loginText  {
+.loginText {
   color: #000000;
   font-size: 18px;
   font-weight: bold;
@@ -173,7 +172,7 @@ form {
 }
 
 /* Formulaire | Connexion - Inscription */
-.inputLoginSignin{
+.inputLoginSignin {
   padding-left: 10px;
   font-size: 12px;
   margin-top: 20px;
@@ -181,7 +180,7 @@ form {
   margin-left: 20px;
 } 
 
-input[type="text"]{
+input[type="text"] {
   font-size: 12px;
   color: #333; 
   padding-top: 10px;
@@ -374,7 +373,6 @@ a.active {
   flex-flow: row wrap;
 }
 
-
 .labelAccount {
 display: table-cell;
 padding-bottom: 5px;
@@ -410,7 +408,7 @@ padding-bottom: 5px;
   padding-left: 39px;
   padding-right: 39px;
   padding-bottom: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #ffffff;
   border: none;
   font-family: Arial, Helvetica;
@@ -423,13 +421,12 @@ padding-bottom: 5px;
 }
 
 .accountButton_mdp {
-  float: right;
   margin-top: -59px;
   margin-right: 68px;
-  margin-bottom: 50px;
+ position: absolute;
 }
   
-.accountButton:hover {
+.accountButton:hover, .accountButton_mdp:hover {
   background-color: #bb4c87;
 }
 
@@ -450,19 +447,93 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   outline: none;
 }
 
-.infoNew_mdp  {
+.infoNew_mdp {
   text-align: center;
   font-size: 14px;
   margin-bottom: 25px;
 }
 
 /*-- COMPTE | HISTORIQUE COMMANDES --*/
-.historyTable {
-  display: table-cell;
+table{
+  margin-left: 20px;
+  border-collapse: collapse;
+  width: 640px;
+  margin-top: -20px;
+}
+
+th, td {
+  padding: 25px 10px 25px 10px;
+  text-align: left;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+th {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+td {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+th:last-child {
+  text-align: center;
+}
+
+td:last-child {
+  text-align: center;
+  cursor: pointer;
+}
+
+td img {
+  cursor: pointer;
 }
 
 
+/*-- Commande preview --*/
+.table_cmdUp {
+  margin-top: 50px;
+}
 
+.preview {
+  margin-bottom: 25px;
+  margin-top: -50px;
+  background-color: #fafafa;
+}
+
+.preview td {
+  border: none;
+  padding: 5px;
+  padding-top: 20px;
+}
+
+.previewPaiement {
+  float: left;
+}
+
+.previewProduct {
+  font-weight: bold;
+}
+
+.cmdPreview {
+  text-align: left;
+  margin-top: -8px;
+  margin-left: 10px;
+}
+
+.previewP-strong {
+  font-weight: bold;
+}
+
+.previewFacture {
+  float: right;
+}
+
+td {
+  width: 140px;
+  text-align: center;
+}
 
 
 /*-- COMPTE | ADRESSE DE LIVRAISON --*/
@@ -478,7 +549,6 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   font-size: 14px;
   display: flex;
   padding-left: 20px;
-
 }
 
 .userAdress_1 {
@@ -511,7 +581,7 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   text-decoration: none;
 }
 
-.accountButton_add{
+.accountButton_add {
   background-color: #E156A0;
   height: 41px;
   width: 250px;
@@ -532,7 +602,6 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   float: right;
 }
 
-  
 .accountButton_add:hover {
   background-color: #bb4c87;
 }
@@ -556,14 +625,14 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
 }
 
 /* Contenu wishlist */
-.wishlist_container{
+.wishlist_container {
   display: flex;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
 }
 
-.wishlist_offres{
+.wishlist_offres {
   margin-left: 25px;
   width: 193px;
   height: 260px;
@@ -572,19 +641,29 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 25px;
+  box-shadow:  0px 5px 9px 0px #a7a7a79a;
+  transition: .2s ease-in-out;
+}
+
+.wishlist_offres:hover {
+  transform: scale(1.03);
 }
 
 .wishlist_offres:first-of-type{
   margin-left: 0px;
 }
 
-.wishlist_product{
+.wishlist_offres a {
+  text-align: center;
+}
+
+.wishlist_product {
   font-size: 12px;
   margin-left: 12px;
   margin-top: 12px;
 }
 
-.wishlist_description{
+.wishlist_description {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
@@ -600,7 +679,7 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   margin-bottom: 10px;
 }
 
-.wishlist_produit{
+.wishlist_produit {
   border-radius: 110px;
   width: 112px;
   height: 112px;
@@ -608,17 +687,17 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   margin-right: auto;  
 }
 
-.wishlist_wishlist{
+.wishlist_wishlist {
   width: 16px;
   height: 15px;
   position: absolute;
   margin-left: 160px;
-  margin-top: -15px;
+  margin-top: -16px;
   background-image: url("../../img/defaultWishlist.png");
   background-repeat: no-repeat;
 }
 
-.wishlist:hover{
+.wishlist:hover {
   background-image: url("../../img/defaultWishlist_b.png");
 }
 
@@ -639,7 +718,7 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.wishlist_button_panier span{
+.wishlist_button_panier span {
   display: flex;
   align-items: center;
   padding-left: 5px;
@@ -647,7 +726,7 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   padding-bottom: 8px;
 }
 
-.wishlist_button_panier img{
+.wishlist_button_panier img {
   width: 12px;
   height: auto;
   margin-left: 0px;
@@ -655,12 +734,12 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   border-radius: 0px;
 }
 
-.wishlist_button_panier a{
+.wishlist_button_panier a {
   text-decoration: none;
   color: white;
 }
 
-.wishlist_button_panier:hover{
+.wishlist_button_panier:hover {
   background-color: #bb4c87;
   cursor: pointer;
 }
@@ -685,16 +764,13 @@ input[type="tel"], [type="email"], [type="datetime"], .inputAccount {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.wishlist_button_rupture span{
+.wishlist_button_rupture span {
   display: flex;
   align-items: center;
   padding-left: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-
-
-
 
 /* WISHLIST | VIDE */
 .userContainer_wishlist_none {

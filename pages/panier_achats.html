@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/panier.css">
+  <link rel="stylesheet" href="../assets/css/boutique.css">
   <link rel="stylesheet" href="../assets/css/header_footer.css"> 
   <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
   <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
@@ -19,9 +19,14 @@
 <!--  main index -->
 
 <main>   
+  <!-- Background secondaire -->
     <div id="background_ventes"> 
+
+    <!-- Fil d'ariane -->
             <div class="breadcrumbs">Accueil > <strong>Panier </strong></div>
-        <div class="title">Votre panier ! </div>
+    <!-- Titre Panier -->
+        <div class="title_achats">Votre panier ! </div>
+    <!-- Section du panier  -->
     <div id="content_panier">
         
         <span class="intitulé"> Description Prix Quantité Sous-total </span>
@@ -30,7 +35,7 @@
             <div class="bordure"></div>
         <div class="produit_content">
             <img src="../img/Produits_site/Carte Postale/postale_3.webp" alt="windsor">
-            <span class="descriptif"> <strong>Windsor j'adore</strong> <br> Carte postale
+            <span class="descriptif_panier"> <strong>Windsor j'adore</strong> <br> Carte postale
             </span>
             <span class="prix"> 5,00€ </span>
             <input type="select">
@@ -44,7 +49,7 @@
         
         <div class="produit_content">
             <img src="../img/Produits_site/Carte Postale/postale_11.webp" alt="windsor">
-            <span class="descriptif"> <strong>Ce soir je sors... </strong> <br> Carte postale
+            <span class="descriptif_panier"> <strong>Ce soir je sors... </strong> <br> Carte postale
             </span>
             <span class="prix"> 5,00€ </span>
             <input type="select">
@@ -58,7 +63,7 @@
 
         <div class="produit_content">
             <img src="../img/Produits_site/Carte Postale/postale_14.webp" alt="windsor">
-            <span class="descriptif"> <strong>Fille craquante</strong> <br> Carte postale
+            <span class="descriptif_panier"> <strong>Fille craquante</strong> <br> Carte postale
             </span>
             <span class="prix"> 5,00€ </span>
             <input type="select">
@@ -79,12 +84,21 @@
         </div>
    </div>
 
-   <div class="title2">Créations qui pourrait te plaire </div>
+
+
+<!-- Titre Créations -->
+   <div class="title2_achats">Créations qui pourrait te plaire </div>
         
+  <!-- Section Créations qui pourrait plaire -->
+
    <section id="boutique_saisons">
+
+<!-- Div englobant le contenu -->
 
   <div class="offres_container">
   
+<!-- Produit 1  -->
+
   <div class="offres">
 
       <span class="product">#Badges</span>
@@ -105,6 +119,8 @@
 
     </div>
 
+<!-- Produit 2  -->
+
     <div class="offres">
 
       <span class="product">#Badges</span>
@@ -124,6 +140,8 @@
         <span>Ajouter</span>
       </a>
     </div>
+
+<!-- Produit 3  -->
 
     <div class="offres">
       <span class="product">#Badges</span>
@@ -147,7 +165,7 @@
   </div>
 </section>
         
-    
+  
 </main>
  <!-- Footer -->
  <main-footer current="contact"></main-footer>

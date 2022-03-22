@@ -16,6 +16,19 @@ body {
     margin-right: auto;
 }
 
+.breadcrumbs a {
+    text-decoration: none;
+    color:#000000
+  }
+  
+  .breadcrumbs a:hover {
+    font-weight: 600;
+  }
+  
+  .breadcrumbs strong {
+    color: #bb4c87;
+  }
+
 /*-- HEADER DES ENFERS: DEBUT --*/
 header {
     height: auto;

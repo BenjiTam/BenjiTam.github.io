@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/main.css"> <!-- CSS Global-->
   <link rel="stylesheet" href="../assets/css/users.css"> <!-- CSS Login & Compte Utilisateur-->
-  <link rel="stylesheet" href="../assets/css/pages/home.css">
   <link rel="stylesheet" href="../assets/css/header_footer.css"> <!-- CSS Header | Footer -->
   <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
   <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
@@ -21,9 +20,11 @@
 
   <!-- Contenu -->
   <main class="mainAccount">
-    <div class="breadcrumbs">Accueil > Mon compte > <strong>Mes informations</strong></div>
+    <div class="breadcrumbs"><a href="index.html">Accueil > </a></a><strong>Mes informations</strong></div>
+
     <!-- BLOC GLOBAL-->
     <div id="containerAccount">
+      
       <!-- Navigation | Gauche -->
       <nav class="userNav">
         <div class="userNav_title">Votre Compte</div>
@@ -105,7 +106,7 @@
                 <input class="inputAccount" type="datetime" name="birth" id="birth" placeholder="14/08/1998">
                 
                 <label class="labelAccount" for="email">Adresse mail<span class="asterisk">*</span>:</label>
-                <input class="inputAccount" type="email" name="email" id="email" placeholder="Roger.Rabbit@gmail.com">
+                <input class="inputAccount" type="email" name="email" id="emailaccount" placeholder="Roger.Rabbit@gmail.com">
               </div>
             </div>
 

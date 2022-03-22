@@ -31,7 +31,7 @@ class MyFooter extends HTMLElement {
               <a href="ateliers.html">Les ateliers</a>
             </li>
             <li>
-              <a href="news/agenda.html">Les news/agenda</a>
+              <a href="news-agenda.html">Les news/agenda</a>
             </li>
             <li>
               <a href="contact.html">Contact</a>
@@ -43,7 +43,7 @@ class MyFooter extends HTMLElement {
               <a href="cgu.html">CGU</a>
             </li>
             <li>
-              <a href="http://127.0.0.1:5501/pages/rgpd.html">RGPD</a>
+              <a href="rgpd.html">RGPD</a>
             </li>
             <li>
               <a href="account.html">Mon compte</a>

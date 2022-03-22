@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/main.css"> <!-- CSS Global-->
+  <link rel="stylesheet" href="../assets/css/users.css"> <!-- CSS Login & Compte Utilisateur-->
+  <link rel="stylesheet" href="../assets/css/header_footer.css"> <!-- CSS Header | Footer -->
+  <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
+  <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
+  <script type="module" src="../assets/js/footer.js" defer></script> <!-- JS | Charge le footer-->
+  <title>Mes commandes | Les ateliers de Lilo</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <main-header current="home"></main-header>
+
+  <!-- Contenu -->
+  <main class="mainAccount">
+    <div class="breadcrumbs"><a href="index.html">Accueil > </a><a href="account.html">Mon compte > </a><strong>Mes commandes</strong></div>
+
+    <!-- BLOC GLOBAL-->
+    <div id="containerAccount">
+
+      <!-- Navigation | Gauche -->
+      <nav class="userNav">
+        <div class="userNav_title">Votre Compte</div>
+        <ul class="userNav">
+          <li>
+            <a class="userNav"  href="account.html">
+              <img src="/img/usersInfos.svg" alt="">
+              <span class="userNav_cat">Mes informations</span>
+            </a>
+          </li>
+          <div class="userNav_border"></div>
+            <li>
+              <a class="userNav active" href="historique.html">
+                <img src="/img/historiqueCmd.svg" alt="">
+                <span class="userNav_cat">Mes commandes</span>
+              </a>
+            </li>
+            <div class="userNav_border"></div>
+              <li>
+                <a class="userNav " href="livraisons.html">
+                  <img src="/img/livraison.svg" alt="">
+                  <span class="userNav_cat">Adresses de livraisons</span>
+                </a>
+              </li>
+              <div class="userNav_border"></div>
+                <li>
+                  <a class="userNav" href="wishlist.html">
+                    <img class="userNav" src="/img/Wishlist-icon.svg" alt="">
+                    <span class="userNav_cat">Wishlist</span>
+                  </a>
+                </li>
+                <div class="userNav_border"></div>
+                  <li>
+                    <a class="userNav" href="index.html">
+                      <img src="/img/logout.svg" alt="">
+                      <span class="userNav_cat">Déconnexion</span>
+                    </a>
+                  </li>
+          </ul>
+      </nav>
+
+      <!-- BLOC DROIT INFOS-->
+      <div class="userContainer">
+        <div class="user_title">Mes commandes</div>
+
+        <div class="userText_info">
+            <p>Vous trouvez ici vos commandes passées depuis la création de votre compte.</p>
+        </div>
+
+        <div class="userAccount_border"></div>
+
+        <!-- Commandes simple -->
+        <div class="table">
+          <table>
+              <tr>
+                  <th>Date</th>
+                  <th>N° de commande</th>
+                  <th>Montant</th>
+                  <th>Statut</th>
+                  <th>Détails</th>
+              </tr>
+              <tr>
+                  <td>15/01/2022</td>
+                  <td>JPSALEDJVSEZT</td>
+                  <td>5,00€</td>
+                  <td>En préparation</td>
+                  <td><img src="../img/account_arrrowDown.png" alt="flechesDown"></td>
+              </tr>
+              <tr>
+                  <td>09/08/2021</td>
+                  <td>GHSAOKUJVSZDT</td>
+                  <td>10,00 €</td>
+                  <td>Expédié</td>
+                  <td><img src="../img/account_arrrowDown.png" alt="flechesDown"></td>
+              </tr>
+              <tr>
+                <td>14/04/2020</td>
+                <td>PNFGOKUJOPLKJ</td>
+                <td>10,00 €</td>
+                <td>Expédié</td>
+                <td><a href="#"><img src="../img/account_arrrowUp.png" alt="flechesUp"></a></td>
+            </tr>
+          </table>
+          
+          <!-- Commande | Détails -->
+          <div class="table_cmdUp">
+            <table class="preview">
+                <tr>
+                    <td>
+                      <a href="#"><img src="../img/Produits_site/Produit_img1.png" alt="produit"></a>
+                    </td>
+                    <td>
+                      <p class="previewProduct">Windsor, j'adore</p>
+                      <p class="cmdPreview">#Carte postale</p>
+                    </td>
+                    <td>x1</td>
+                    <td>5,00€</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#"><img src="../img/Produits_site/Produit_img2.png" alt="produit"></a>
+                  </td>
+                  <td>
+                    <p class="previewProduct">Fille craquante</p>
+                    <p class="cmdPreview">#Carte postale</p>
+                  </td>
+                  <td>x1</td>
+                  <td>5,00€</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+            </table>
+      </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <main-footer current="contact"></main-footer>
+  
+</body>
+</html>

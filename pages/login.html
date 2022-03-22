@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/main.css"> <!-- CSS Global-->
   <link rel="stylesheet" href="../assets/css/users.css"> <!-- CSS Login & Compte Utilisateur-->
-  <link rel="stylesheet" href="../assets/css/pages/home.css">
   <link rel="stylesheet" href="../assets/css/header_footer.css"> <!-- CSS Header | Footer -->
   <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
   <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
@@ -21,7 +20,7 @@
   
   <!-- Contenu -->
   <main class="mainAccount">
-    <div class="breadcrumbs">Accueil > <strong>Connexion | Inscription</strong></div>
+    <div class="breadcrumbs"><a href="index.html">Accueil > </a><strong>Connexion | Inscription</strong></div>
     <div class="titlePage">Connexion | Inscription</div>
     <div id="container">
       <div id="contentBloc">
@@ -44,7 +43,7 @@
             <input type="submit" class="loginButton" value="Se connecter" onclick="window.location.href = 'account.html';" ></input>
           </div>
 
-          <p class="personelData">Vos donnéees personnelles seront utilisées pour améliorer votre expérience sur ce site, à gérer votre compte ainsi que d'autres points décrit dans notre <span class="politique"><a href="#">Politique de confidentialité.</a></span>
+          <p class="personelData">Vos donnéees personnelles seront utilisées pour améliorer votre expérience sur ce site, à gérer votre compte ainsi que d'autres points décrit dans notre <span class="politique"><a href="cgu.html">Politique de confidentialité.</a></span>
           </p>  
         </div>
 
@@ -62,7 +61,7 @@
           </form>
 
           <div class="remember2">
-            <input type="checkbox" name="check" id="signIn_check2"> J'accepte les <span class="politique"><a href="#">Conditions générales</a></span> et la <span class="politique"><a href="#">Politique de confidentialité.</a></span>
+            <input type="checkbox" name="check" id="signIn_check2"> J'accepte les <span class="politique"><a href="cgu.html">Conditions générales</a></span> et la <span class="politique"><a href="rgpd.html">Politique de confidentialité.</a></span>
           </div>
             <input input type="submit" class="loginButton" value="Créer un compte"></input>
         </div>

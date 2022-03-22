@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/panier.css">
+  <link rel="stylesheet" href="../assets/css/boutique.css">
   <link rel="stylesheet" href="../assets/css/header_footer.css"> 
   <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
   <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
   <script type="module" src="../assets/js/footer.js" defer></script> <!-- JS | Charge le footer-->
-  <title>Panier / Achats | Les ateliers de Lilo</title>
+  <title> Panier / Etape Validation | Les ateliers de Lilo </title>
 </head>
 
 <body>
@@ -19,13 +19,23 @@
 <!--  main index -->
 
 <main>   
+    <!-- Background secondaire -->
+
     <div id="background_ventes"> 
+
+    <!-- Fil d'ariane -->
+
             <div class="breadcrumbs">Accueil > Panier > <strong> | Etape Validation </strong></div>
-        <div class="title">Informations clients </div>
-        
+    <!-- Titre Informations clients -->
+        <div class="title_validation">Informations clients </div>
+    
+    <!-- Section content du client -->
+
         <div id="content_client">
+
                 <span class="intitulé"> Mes-données Mon-compte
                 </span>
+
             <div class="bordure"></div>
                 <p>
                 <strong>M. RABBIT Roger</strong>
@@ -39,13 +49,17 @@
                 </p>
 
                 <div class="button_end">
-                    <a href="boutique.html" class="button_données">modifier les données</a>
+                    <a href="account.html" class="button_données">modifier les données</a>
                 </div>
                 
                           
         </div>
 
-        <div class="title2">Résumé de la commande </div>
+    <!-- Titre Résumé de la commande  -->
+
+        <div class="title2_validation">Résumé de la commande </div>
+
+    <!--  Section Résumé de la commande -->
 
             <div id="content_resume">
                 <span class="bold">Votre panier
@@ -101,12 +115,16 @@
                 <div class="bordure5"></div>
 
                 <div class="button_end">
-                    <a href="boutique.html" class="button_données">modifier le panier</a>
+                    <a href="http://127.0.0.1:5502/pages/panier_achats.html" class="button_données">modifier le panier</a>
                 </div>
             </div>
+            
+    <!-- Titre mode de paiement -->
 
-            <div class="title2">Mode de paiement </div>
-
+            <div class="title2_validation">Mode de paiement </div>
+    
+    <!--Section Mode de Paiement  -->
+    
             <div id="content_paiement">
                 <div>
                     <input type="radio" id="paytowin" name="paytowin"
@@ -131,8 +149,6 @@
             
             <a href="achats_validation.html" class="button_finaliser">finaliser le paiement</a>
 
-        
-    
 </main>
  <!-- Footer -->
  <main-footer current="contact"></main-footer>

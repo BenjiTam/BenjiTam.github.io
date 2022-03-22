@@ -1,8 +1,18 @@
 /* -- CSS TEMPORAIRE BOUTIQUE --*/
 
-main { /*-- Largeur du contenu (Figma) --*/
-  width: 1050px;
+body{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 auto;
+  background-image: url("/img/brique_background.png"); 
 }
+
+main{
+    color: black;
+    width: 100%;  
+    height: 100%;
+    background-size: cover;
+    margin: 0 auto;
+}  
 
 #boutique{
     margin-top: 30px;
@@ -12,6 +22,7 @@ main { /*-- Largeur du contenu (Figma) --*/
   }
 
   /*-- Recherche + Filtre boutique --*/
+  
 .searchBar_shop {
     text-align: center;
 }
@@ -250,12 +261,14 @@ input[type="search"] {
   justify-content: center;
 }
 
+
+
 .productGalery img {
   height: 433px;
   width: 430px;
   border-radius: 100%;
   object-fit: cover;
-  margin-right: 20px;
+  margin-right: 90px;
   margin-bottom: 25px;
 }
 
@@ -296,7 +309,6 @@ margin-right: 75px;
 }
 
 .addCard_product {
-  width: 600px;
   height: 41px;
   color: white;
   background-color: #E156A0;
@@ -309,6 +321,7 @@ margin-right: 75px;
   justify-content: center;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5px;
 }
 
 .addCard_product span {
@@ -376,3 +389,507 @@ margin-right: 75px;
   margin-top: -48px;
   margin-right: 14px;
 }
+
+/* Début de la page Panier_achats */
+
+/*   Main Panier achats */
+
+#background_ventes{
+  background-image: url("../../../img/feuille_lampe.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  background-position: center top;
+}
+
+/*  Titre Panier */
+
+.title_achats{
+  width: 1070px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-top: 15px;
+  display: flex;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/* Section du panier */
+
+#content_panier{
+  width: 1090px;
+  height: 800px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.intitulé{
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  justify-content: center;
+  text-align: justify;
+  width: 920px;
+  word-spacing: 190px;
+  padding-left: 60px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.poubelle{
+  width: 15px;
+  height: 15px;
+  margin-left: 25px;
+}
+
+.bordure{
+  border: 1px solid #EBEBEB;
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.produit_content{
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.produit_content img{
+  width: 115px;
+  height: 115px;
+  object-fit:cover;
+  display: flex;
+}
+
+.descriptif_panier {
+  display: block;
+  margin-top: -115px;
+  margin-left: 130px;
+}
+
+.prix{
+  font-weight: bold;
+  margin-left: 320px;
+  font-size: 18px;
+}
+
+.produit_content input{
+  margin-left: 180px;
+  width: 80px;
+  height: 30px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black ;
+  border-radius: 5px;
+}
+
+.totaux{
+  margin-left: 200px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.close {
+  background-color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 50px;
+  border: none;
+  text-decoration: none;
+  color: black;
+}
+
+.bordure2{
+  border: 1px solid #EBEBEB;
+  width: 1020px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.bordure3{
+  border: 1px solid #EBEBEB;
+  width: 1020px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.finish_him{
+  display: block;
+  text-align: right;
+  margin-right: 60px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.button_poursuivre{
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 270px;
+  height: 25px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.button_poursuivre:hover{
+  background-color: black;
+  color: white;
+}
+
+.button_commande{
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: #E156A0;
+  width: 320px;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+  display: flex;
+  margin-top: -40px;
+  margin-left: 730px;
+  font-weight: bold;
+}
+
+.button_commande:hover{
+  background-color: #83315d;
+}
+
+.title2_achats{
+  width: 1070px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-top: 15px;
+  display: flex;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* <!-- Section Créations qui pourrait plaire --> */
+
+/* Contenu boutique créations */
+
+.offres_container{
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.offres{
+  margin-left: 20px;
+  width: 335px;
+  height: 420px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offres:first-of-type{
+  margin-left: 0px;
+}
+
+.product{
+  font-size: 12px;
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+.description{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  display: block;
+  width: 320px;
+}
+
+.price{
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.price:last-of-type{
+  margin-bottom: 15px;
+}
+
+.produit{
+  border-radius: 110px;
+  width: 220px;
+  height: 220px;
+  margin-left: 50px;  
+}
+
+.wishlist{
+  width: 27px;
+  height: 25px;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 280px;
+  background-image: url("../../img/Wishlist-icon.png");
+  background-repeat: no-repeat;
+}
+
+.wishlist:hover{
+  width: 27px;
+  height: 25px;
+  background-image: url("../../img/wishlist.svg");
+  filter: invert(0.5) sepia(1) saturate(68) hue-rotate(300deg);
+}
+
+.wishlist:active{
+  width: 27px;
+  height: 25px;
+  background-image: url("../../img/wishlist.svg");
+  filter: invert(0.5) sepia(1) saturate(68) hue-rotate(300deg);
+}
+
+.button_panier {
+  width: 335px;
+  height: 41px;
+  color: white;
+  background-color: #E156A0;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.button_panier span{
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.button_panier img{
+  width: 20px;
+  height: auto;
+  margin-left: 0px;
+  margin-top: -4px;
+  border-radius: 0px;
+}
+
+.button_panier a{
+  text-decoration: none;
+  color: white;
+}
+
+.button_panier:hover{
+  transition: background-color ease-in-out 0.8s, color ease-in .4s .6s; 
+  background-color: #83315d;
+  cursor: pointer;
+
+}
+
+.button_panier:active {
+  background-color: #83315d;
+  box-shadow: 0 5px rgb(151, 151, 151);
+  transform: translateY(4px);
+}
+
+/* Fin de la page panier_achats */
+
+/* Page achats_validation */
+
+/* Section Informations clients */
+
+.title2_validation{
+  width: 1070px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-top: 15px;
+  display: flex;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.title_validation{
+  width: 1070px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-top: 15px;
+  display: flex;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+#content_client{
+  width: 1090px;
+  height: 260px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+#content_client p{
+  display: inline-block;
+  white-space: pre;
+  margin-left: -95px;
+  margin-top: 5px;
+}
+
+#content_client p:last-of-type{
+  display: inline-block;
+  margin-left: -115px;
+
+}
+
+.button_données{
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 270px;
+  height: 25px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 760px;
+}
+
+.button_données:hover{
+  background-color: black;
+  color: white;
+}
+
+/* Section Résumé de la commande */
+
+#content_resume{
+  width: 1090px;
+  height: 430px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.bold{
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.grey{
+  color: #888888;
+}
+
+.tunasse{
+  text-align: right;
+  color:#E156A0;
+  font-weight: bold;
+  float: right;
+  margin-right: 40px;
+}
+
+.bordure4{
+  border: 1px solid #EBEBEB;
+  width: 1020px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bordure5{
+border: 1px solid white;
+width: 1020px;
+margin: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#content_resume .button_données{
+margin-left: 400px;
+
+}
+
+/* Section Mode de Paiement */
+
+#content_paiement{
+width: 1090px;
+height: 285px;
+background-color: white;
+margin: 0 auto;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin-bottom: 25px;
+padding-top: 20px;
+}
+
+
+#content_paiement img{
+width: 130px;
+height: 45px;
+margin-left: 20px;
+object-fit: cover;
+}
+
+#content_paiement input{
+margin-left: 80px;
+margin-top: 50px;
+width: 20px;
+height: 20px;
+}
+
+#content_paiement label{
+margin-left: 20px;
+}
+
+
+.button_finaliser{
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+color: white;
+background-color: #E156A0;
+width: 540px;
+height: 30px;
+padding-top: 15px;
+display: flex;
+justify-content: center;
+font-weight: bold;
+margin: 0 auto;
+text-align: center;
+}
+
+.button_finaliser:hover{
+background-color: #83315d;
+}
+
+/* Fin de la page d'achats validation */
