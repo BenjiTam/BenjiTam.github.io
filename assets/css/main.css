@@ -41,22 +41,31 @@ body{
   background-attachment:local;
 }
 
-.background_lamzpes{
-  background-image: url("../../img/background/bg_lampes.png");
+.background_planche{
   background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 50% ;
-  background-attachment:local;
+  justify-content: center;
+  display: flex;
+  height: 220px;
+  align-items: center;
 }
 
-.background_lamzpes{
-  background-image: url("../../img/background/bg_lampes.png");
+.background_map{
+  display: flex;
+  justify-content: right;
   background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 50% ;
-  background-attachment:local;
+  height: 370px;
+  margin-top: -420px;
+  padding-right: 100px;
 }
 
+.background_planche_contact{
+  margin-top: 40px;
+}
+
+
+.background_contact{
+  margin-top: -350px;
+}
 
 /* Début accueil */
 
@@ -181,6 +190,7 @@ body{
   flex-direction: column;
   justify-content: space-between;
   transition: .2s ease-in-out;
+  box-shadow:  0px 5px 9px 0px #a7a7a79a;
 }
 
 .offres:hover{
@@ -248,6 +258,7 @@ body{
   margin-left: 290px;
   background-image: url("../../img/Wishlist-icon.png");
   background-repeat: no-repeat;
+  transition: .1s ease-in;
 }
 
 .wishlist:hover{
@@ -280,7 +291,7 @@ body{
   justify-content: center;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  
+  transition: .2s ease-in-out;
 }
 
 .button_panier span{
@@ -303,16 +314,12 @@ body{
 }
 
 .button_panier:hover{
-  transition: background-color ease-in-out 0.8s, color ease-in .4s .6s; 
-  background-color: #83315d;
+  background-color: #bb4c87;
   cursor: pointer;
-
 }
 
 .button_panier:active {
-  background-color: #83315d;
-  box-shadow: 0 5px rgb(151, 151, 151);
-  transform: translateY(4px);
+  background-color: #81385f;
 }
 
 /*  Section Agenda rdv */
@@ -404,6 +411,7 @@ h2{
   background-color: white;
   margin: 10px;
   margin-bottom: 50px;
+  box-shadow:  0px 5px 9px 0px #a7a7a79a;
 }
 
 .Button_Voir{
@@ -421,7 +429,6 @@ h2{
 
 .Button_Voir:hover{
   color:#83315d;
-  transform: scale(1.02);
 }
 
 .button_event {
@@ -429,9 +436,8 @@ h2{
   margin-right: auto;
   width: 340px;
   height: 40px;
-  color: #E156A0;
-  background-color: #ffffff;
-  border: 2px solid #E156A0;
+  color: #000000;
+  border: 2px solid #000000;
   text-transform: uppercase;
   font-weight: bold;
   display: flex;
@@ -439,13 +445,12 @@ h2{
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  
+  transition: .1s ease-in-out;
 }
 
 .button_event span{
   display: flex;
   align-items: center;
-  padding-left: 15px;
 }
 
 .button_event a{
@@ -454,16 +459,10 @@ h2{
 }
 
 .button_event:hover{
-  transition: background-color ease-in-out 0.8s, color ease-in .4s .6s; 
   border: none;
-  background-color: #83315d;
+  background-color: #000000;
+  color: #ffffff;
   cursor: pointer;
-
-}
-
-.button_event:active {
-  background-color: #83315d;
-  transform: translateY(4px);
 }
 
 /* Fin de la page Accueil index */
@@ -945,6 +944,7 @@ h2{
   width: 1050px;
   height: 700px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 #point_ventes p{
@@ -1259,7 +1259,6 @@ h4{
 
 .maintenance{ 
   margin: 0 auto;
-  background-image:url("/img/background/Background-02.jpg");
   background-size: cover; 
   font-size: 20px;
   font-family: 'Courier New', Arial, Courier, monospace;
@@ -1268,6 +1267,14 @@ h4{
   justify-content: center;
   text-align: center;
   background-position: center top;
+}
+
+.logo_main{
+  padding-top: 100px;
+}
+
+.logo_maintenance{
+  padding-top: 100px;
 }
 
 .maintenance h1 a{
@@ -1280,9 +1287,6 @@ h4{
   text-decoration: none;
 }
 
-.logo_maintenance {
-  margin-top: 78px;
-}
 
 .not_found h1 {
   font-size: 50px;

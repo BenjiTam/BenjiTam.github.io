@@ -15,93 +15,102 @@
 <body>
   <main-header current="contact"></main-header>
   <main> 
-    <!--  Fil d'ariane -->
-    <div class="breadcrumbs"><a href="index.html">Accueil > </a><strong>Contactez-moi | FAQ</strong></div>
-     
-      <!--  Section FAQ -->
-    <div id="faq_formulaire">
-
-      <!-- Content FAQ -->
-      <div id="foire_questions">
-
-        <!-- Titre FAQ -->
-        <div class="title_left"> FAQ | Foire aux questions</div>
-
-        <div class="questions_ask">
-          <!-- Question 1 -->
-            <div class="title_commande"> Commande | Questions </div>
-            <p class="ask_it">Sauf spécification contraire, tous nos produits bénéficient de la clause “satisfait ou remboursé”. Les reprises ne peuvent être faites qu’après notre accord préalable écrit, pour des marchandises à l’état neuf et en emballage d’origine, livrées depuis moins de 30 jours, retournées franco de port et d’emballage, avec indication des ...
-            </p>
-        </div>  
-
-        <div class="questions_ask">
-          <!-- Question 2 -->
-            <div class="title_commande"> Paiement | Questions </div>
-            <p class="ask_it">Vous avez plusieurs possibilités pour régler vos achats.
-              Indiquez ici les moyens de paiement que vous acceptez comme par exemple :
-              <br>
-              • Le paiement par carte bancaire
-              <br>
-              • Le paiement par virement
-              <br>
-              • Les chèques bancaires
-              <br>
-              • etc.
-            </p>
-        </div>  
+    <!-- Background -->      
+      <div class="background_lampes"> 
+        <!--  Fil d'ariane -->
+        <div class="breadcrumbs"><a href="index.html">Accueil > </a><strong>Contactez-moi | FAQ</strong></div>
         
-      <!-- Question 3 -->
-        <button class="accordion">Envois & Livraisons | Questions</button>
-        <div class="pannel"> 
-      </div>
-      <!-- Question 4 -->
-        <button class="accordion">
-          <div class="pannel"> Produits | Questions</div>
-        </button>
-      <!-- Question 5 -->
-        <button class="accordion">
-          <div class="pannel"> E-shop | Questions</div>
-        </button>
-        
+          <!--  Section FAQ -->
+        <div id="faq_formulaire">
 
+          <!-- Content FAQ -->
+          <div id="foire_questions">
 
-      </div>
+            <!-- Titre FAQ -->
+            <div class="title_left"> FAQ | Foire aux questions</div>
 
-      <!-- SECTION FORMULAIRE -->
-          <div id="formulaire">
+            <div class="questions_ask">
+              <!-- Question 1 -->
+                <div class="title_commande"> Commande | Questions </div>
+                <p class="ask_it">Sauf spécification contraire, tous nos produits bénéficient de la clause “satisfait ou remboursé”. Les reprises ne peuvent être faites qu’après notre accord préalable écrit, pour des marchandises à l’état neuf et en emballage d’origine, livrées depuis moins de 30 jours, retournées franco de port et d’emballage, avec indication des ...
+                </p>
+            </div>  
+
+            <div class="questions_ask">
+              <!-- Question 2 -->
+                <div class="title_commande"> Paiement | Questions </div>
+                <p class="ask_it">Vous avez plusieurs possibilités pour régler vos achats.
+                  Indiquez ici les moyens de paiement que vous acceptez comme par exemple :
+                  <br>
+                  • Le paiement par carte bancaire
+                  <br>
+                  • Le paiement par virement
+                  <br>
+                  • Les chèques bancaires
+                  <br>
+                  • etc.
+                </p>
+            </div>  
             
-            <!-- CONTENT FORMULAIRE -->
-              <div class="content_formulaire">  
+          <!-- Question 3 -->
+            <button class="accordion">Envois & Livraisons | Questions</button>
+            <div class="pannel"> 
+          </div>
+          <!-- Question 4 -->
+            <button class="accordion">
+              <div class="pannel"> Produits | Questions</div>
+            </button>
+          <!-- Question 5 -->
+            <button class="accordion">
+              <div class="pannel"> E-shop | Questions</div>
+            </button>
+            
 
-                <div class="title_right"> Contactez-moi</div>
-              
-                <p class="ask_it">Pour tous conseils/ renseignements , questions ou autres, 
-                  je suis à votre disposition , 
-                  il y a toujours une solution adapté à vos besoins ! </p>
 
-                  <div class="bordure2"></div>
+          </div>
 
-                <!-- FORMULAIRE -->
+          <!-- SECTION FORMULAIRE -->
+              <div id="formulaire">
+                
+                <!-- CONTENT FORMULAIRE -->
+                  <div class="content_formulaire">  
 
-                <div class="formulaire_descriptif">
-                  <form action="mailto:email@example.com" method="post" class="form-name">
-                    <div class="form-name">
-                      <input type="text" name="name" id="name" required placeholder="Ton nom" autocomplete="off">
+                    <div class="title_right"> Contactez-moi</div>
+                  
+                    <p class="ask_it">Pour tous conseils/ renseignements , questions ou autres, 
+                      je suis à votre disposition , 
+                      il y a toujours une solution adapté à vos besoins ! </p>
+
+                      <div class="bordure2"></div>
+
+                    <!-- FORMULAIRE -->
+
+                    <div class="formulaire_descriptif">
+                      <form action="mailto:email@example.com" method="post" class="form-name">
+                        <div class="form-name">
+                          <input type="text" name="name" id="name" required placeholder="Ton nom" autocomplete="off">
+                        </div>
+                        <div class="form-name">
+                          <input type="text" name="prenom" id="prenom" required placeholder="Ton prénom" autocomplete="off">
+                        </div>
+                        <div class="form-name">
+                          <input type="email" name="email" id="email" required placeholder="Ton adresse mail" autocomplete="off">
+                        </div>
+                        <div class="form-name">
+                          <textarea name="textarea" id="commentaires" required placeholder="Ton message"  minlength="30" maxlength="430" autocomplete="off"></textarea>
+                          <input type="submit" value="Envoyer" action="mailto:email@example.com" class="send_me"></input>
+                      </form>
                     </div>
-                    <div class="form-name">
-                      <input type="text" name="prenom" id="prenom" required placeholder="Ton prénom" autocomplete="off">
-                    </div>
-                    <div class="form-name">
-                      <input type="email" name="email" id="email" required placeholder="Ton adresse mail" autocomplete="off">
-                    </div>
-                    <div class="form-name">
-                      <textarea name="textarea" id="commentaires" required placeholder="Ton message"  minlength="30" maxlength="430" autocomplete="off"></textarea>
-                      <input type="submit" value="Envoyer" action="mailto:email@example.com" class="send_me"></input>
-                  </form>
-                </div>
-              </div>
+                  </div>
+        </div>
       </div>
+    </div>   
+    <div class="background_planche_contact">
+      <img src="../img/background/bg_planche.png" alt="planches">
     </div>
+    <div class="background_contact">
+      <img src="../img/background/bg_contact.png" alt="contact">
+    </div> 
   </main>   
   <main-footer current="contact"></main-footer>
 </body>
