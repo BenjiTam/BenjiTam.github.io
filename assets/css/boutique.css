@@ -389,14 +389,6 @@ margin-right: 75px;
 
 /*   Main Panier achats */
 
-#background_ventes{
-  background-image: url("../../../img/feuille_lampe.png");
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-size: contain;
-  background-position: center top;
-}
-
 /*  Titre Panier */
 
 .title_achats{

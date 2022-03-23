@@ -25,7 +25,7 @@ body{
   background-image: url("../../img/brickwall.png");
 }
 
-#background_plantes{
+.background_plantes{
   background-image: url("../../img/background/bg_plantes.png");
   background-repeat: no-repeat;
   background-position: left top;
@@ -33,7 +33,23 @@ body{
   background-attachment:local;
 }
 
-#background_lampes{
+.background_lampes{
+  background-image: url("../../img/background/bg_lampes.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 50% ;
+  background-attachment:local;
+}
+
+.background_lamzpes{
+  background-image: url("../../img/background/bg_lampes.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 50% ;
+  background-attachment:local;
+}
+
+.background_lamzpes{
   background-image: url("../../img/background/bg_lampes.png");
   background-repeat: no-repeat;
   background-position: right top;
@@ -42,25 +58,23 @@ body{
 }
 
 
-
 /* Début accueil */
 
 /* Section About me  */
  
-#about_me {
+#about_me{
   text-align: center;
   justify-content: center;
   display: block;
   position: relative;
   width: 100%;
-  
 }
 
 .humour {
   justify-content: center;
-  margin-top: 60px;
   width: 490px;
-  height: 137px;
+  height: 137px;   
+  padding-top: 60px;
 }
 
 .taped_accueil{
