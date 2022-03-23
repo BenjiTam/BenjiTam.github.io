@@ -14,32 +14,36 @@ a  {
   color: #E156A0;
 }
 
-/*   Main Index Accueil */
+/*   Main Body / Background */
 
 body{
   font-family: 'Courier New', Courier, monospace;
   margin: 0 auto;
-  background-image: url("../../img/brique_background.png");
+  color: black;
+  padding:0;
+  background-position: center;
+  background-image: url("../../img/brickwall.png");
 }
 
-main{
-  color: black;
-  margin: 0 auto;  
-  background-size: cover;
-  width: 100%;  
-  height: 100%;
+#background_plantes{
+  background-image: url("../../img/background/bg_plantes.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 70% ;
+  background-attachment:local;
 }
+
+#background_lampes{
+  background-image: url("../../img/background/bg_lampes.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 50% ;
+  background-attachment:local;
+}
+
+
 
 /* Début accueil */
-
-#background1{
-  background-image: url("../../img/feuille_lampe.png");
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-position: center top;
-  background-size: contain;
-  margin-top: -0px;
-}
 
 /* Section About me  */
  
@@ -59,7 +63,7 @@ main{
   height: 137px;
 }
 
-.taped{
+.taped_accueil{
   width: 90px;
   height: 20px;
   background-color: #FFF5C3;
@@ -165,7 +169,7 @@ main{
   transition: .2s ease-in-out;
 }
 
-.offres:hover {
+.offres:hover{
   transform: scale(1.03);
 }
 
@@ -305,12 +309,12 @@ main{
 
 figure .taped{
   width: 90px;
-  height: 20px;
+  height: 30px;
   background-color: #FFF5C3;
   opacity: 70%;
   display: flex;
   margin-left: 120px;
-  margin-top: -10px;
+  margin-top: -15px;
   position: absolute;
 }
 
@@ -511,14 +515,9 @@ h2{
 #signature{
   display: flex;
   margin-left: 200px;
-  margin-top: 40px;
-  opacity: 0%;
-  transition: 2s ease-in-out;
+  margin-top: 40px; 
 }
 
-#signature:hover{
-  opacity: 100%;
-}
 
 .doigts{
   margin-left: 390px;
@@ -532,6 +531,7 @@ h2{
   background-color: white;
   margin-left: 15px;    
   margin-left: 250px;
+  transition: .5s ease-in-out;
   transform: rotate(5deg);
   text-align: center;
   
@@ -560,7 +560,8 @@ h2{
 }
 
 #carte_papet img:hover{
-  transform: rotate(2deg);
+  transition: .5s;
+  transform: rotate(3deg);
 }
 
 #bijoux_img img{
@@ -573,6 +574,7 @@ h2{
 
 #bijoux_img img:hover{
   transform: rotate(-5deg);
+  transition: .5s;
 }
 
 .Lilo_face{
@@ -1355,7 +1357,7 @@ h4{
 
 /* DEBUT RGPD CGU CGV CONDITIONS HTML  */
 
-#background1{
+#backgroundplan{
   background-image: url("../../../img/feuille_lampe.png");
   background-repeat: no-repeat;
   margin: 0 auto;

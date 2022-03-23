@@ -1,15 +1,8 @@
-body { 
-    margin: 0 auto;
-    font-size: 16px;
-    font-family: 'Courier New', Arial, Courier, monospace; 
-    color: #000000;
-    
-}
 
 /*-- BREADCRUMBS --*/
 .breadcrumbs{
     font-size: 14px;  
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 30px;
     width: 1050px;
     margin-left: auto;
@@ -19,17 +12,17 @@ body {
 .breadcrumbs a {
     text-decoration: none;
     color:#000000
-  }
+}
   
   .breadcrumbs a:hover {
     font-weight: 600;
-  }
+}
   
   .breadcrumbs strong {
     color: #bb4c87;
-  }
+}
 
-/*-- HEADER DES ENFERS: DEBUT --*/
+/*-- HEADER - DÉBUT --*/
 header {
     height: auto;
     background-color: #FBFBFB;
@@ -67,12 +60,17 @@ header {
     padding-bottom: 6px;
 }
 
+.navTop_menu  a.active {
+    border-bottom: 2px solid #E156A0; 
+    color: #E156A0;
+}
+
+
 .headerBorder_bottom {
     border-bottom: 2px solid #DEDEDE;
     width: 837px;
     padding-top: 10px;
     margin-left: 20px;
-
 }
 
 /** MENU SECONDAIRE **/
@@ -109,13 +107,31 @@ header {
 }
 
 .navCat:hover {
+   color: #E156A0;
     filter: invert(0.5) sepia(1) saturate(2) hue-rotate(285deg);
 }
 
+.panierNumber {
+    background-color: #E156A0;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin-left: 26px;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.panierNumber p {
+    display: flex;
+    font-size: 12px;
+    color: #ffffff;
+    justify-content: center;
+    margin-top: 3px;
+}
 
 
-
-/*-- FOOTER DE SES MORTS: DEBUT --*/
+/*-- FOOTER - DÉBUT --*/
 footer {
     height: auto;
     background-color: #FBFBFB;
