@@ -1,0 +1,178 @@
+/*-- OVERLAY RECHERCHE --*/
+#overlaySearch {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.overlay {
+    margin-top: 10px;
+}
+
+.overlayClose {
+display: flex;
+justify-content: right;
+margin-top: 50px;
+margin-right: 300px;
+cursor: pointer;
+transition: .2s ease-in-out;
+}
+
+.overlayClose:hover {
+    opacity: 0.33;
+}
+
+/* Contenu wishlist */
+.wishlist_container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+  }
+  
+  .wishlist_offres {
+    margin-left: 25px;
+    width: 193px;
+    height: 260px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+    box-shadow:  0px 5px 9px 0px #a7a7a79a;
+    transition: .2s ease-in-out;
+  }
+  
+  .wishlist_offres:hover {
+    transform: scale(1.03);
+  }
+  
+  .wishlist_offres:first-of-type{
+    margin-left: 0px;
+  }
+  
+  .wishlist_offres a {
+    text-align: center;
+  }
+  
+  .wishlist_product {
+    font-size: 12px;
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+  
+  .wishlist_description {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    width: 186px;
+  }
+  
+  .wishlist_price{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .wishlist_produit {
+    border-radius: 110px;
+    width: 112px;
+    height: 112px;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+  
+  .wishlist_wishlist {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -16px;
+    background-image: url("../../img/defaultWishlist.png");
+    background-repeat: no-repeat;
+  }
+  
+  .wishlist:hover {
+    background-image: url("../../img/defaultWishlist_b.png");
+  }
+  
+  /* bouton panier */
+  .wishlist_button_panier {
+    width: 193px;
+    height: auto;
+    color: white;
+    background-color: #E156A0;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wishlist_button_panier span {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .wishlist_button_panier img {
+    width: 12px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: -2px;
+    border-radius: 0px;
+  }
+  
+  .wishlist_button_panier a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .wishlist_button_panier:hover {
+    background-color: #bb4c87;
+    cursor: pointer;
+  }
+  
+  .wishlist_button_panier:active {
+    background-color: #83315d;
+  }
+  
+  .wishlist_button_rupture {
+    width: 193px;
+    height: auto;
+    color: white;
+    background-color: #000000;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wishlist_button_rupture span {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }

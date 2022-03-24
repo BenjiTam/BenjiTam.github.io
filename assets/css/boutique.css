@@ -535,6 +535,7 @@ margin-right: 75px;
   display: flex;
   margin-top: 20px;
   margin-left: 40px;
+  transition: .1s ease-in-out;
 }
 
 .button_poursuivre:hover{
@@ -557,10 +558,15 @@ margin-right: 75px;
   margin-top: -40px;
   margin-left: 730px;
   font-weight: bold;
+  transition: .2s ease-in-out;
 }
 
 .button_commande:hover{
-  background-color: #83315d;
+  background-color: #bb4c87;
+}
+
+.button_commande:focus {
+  background-color: #81385f;
 }
 
 .title2_achats{
@@ -772,6 +778,7 @@ margin-right: 75px;
   display: flex;
   margin-top: 20px;
   margin-left: 760px;
+  transition: .1s ease-in-out; 
 }
 
 .button_données:hover{
@@ -874,10 +881,15 @@ justify-content: center;
 font-weight: bold;
 margin: 0 auto;
 text-align: center;
+transition: .2s ease-in-out;
 }
 
 .button_finaliser:hover{
-background-color: #83315d;
+background-color: #bb4c87;
+}
+
+.button_finaliser:focus {
+  background-color: #81385f;
 }
 
 /* Fin de la page d'achats validation */

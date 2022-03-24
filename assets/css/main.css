@@ -60,11 +60,31 @@ body{
 
 .background_planche_contact{
   margin-top: 40px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  display: flex;
+  height: 220px;
+  align-items: center;
 }
+
+.background_planche_about{
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  display: flex;
+  height: 220px;
+  align-items: center;
+  margin-bottom: -40px;
+}
+
 
 
 .background_contact{
   margin-top: -350px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Début accueil */
@@ -471,12 +491,7 @@ h2{
 
 
 #background_about{
-  background-image: url("../../../img/background/bg_about_me.png");
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-position: center top;  
-  width: 1920px;
-  height: 1024px;
+  margin: 0 auto; 
 }
 
 .title{
@@ -497,9 +512,10 @@ h2{
 #content_about{
   display: flex;
   justify-content:center;
+  margin-bottom: 100px;
 }
 
-.taped{
+.polaroid_bg .taped{
   width: 120px;
   height: 45px;
   background-color: #FFF5C3;
@@ -516,6 +532,7 @@ h2{
   background-color: white;
   font-size: 12px;
   margin-left: 25px;
+  position: relative;
 }
 
 .lilo_about p{
@@ -534,9 +551,16 @@ h2{
 
 .doigts{
   margin-left: 390px;
-  margin-top: -150px;
+  margin-top: -160px;
+  position: absolute;
 }
 
+.plantes{
+  justify-content: center;
+  position: flex;
+  margin-top: -200px;
+  margin-left: -410px;
+}
 
 .polaroid_bg{
   width: 440px;
@@ -551,12 +575,7 @@ h2{
 }
 
 .polaroid_bg:hover{
-  
   transform: rotate(-5deg);
-}
-
-.polaroid_bg button:first-of-type{
-  margin-left: 0px;
 }
 
 #its_me{
@@ -565,29 +584,83 @@ h2{
   margin-top: 50px;
 }
 
-#carte_papet img{
-  margin-left: -500px;
-  margin-top: 680px;
-  border-radius: 5%;
-  transform: rotate(-2deg);
+#polaroïd_fixed{
+  position: relative;
+  justify-content: center;
 }
 
-#carte_papet img:hover{
-  transition: .5s;
-  transform: rotate(3deg);
+.polaroid_bg_mini_1{
+  width: 260px;
+  height: 210px;
+  background-color: white;
+  transition: .5s ease-in-out;
+  text-align: center;
+  position:absolute;
+  transform: rotate(-5deg);
+  top: 400px;
+  justify-content: center;
+  left: -500px;
+  
 }
 
-#bijoux_img img{
-  margin-left: -210px;
-  margin-top: 730px;    
-  border-radius: 30%;
+.polaroid_bg_mini_2{
+  width: 240px;
+  height: 220px;
+  background-color: white;
+  transition: .5s ease-in-out;
+  text-align: center;
+  display: flex;  
+  transform: rotate(5deg);
+  position: absolute;  
+  top: 400px;
+  left: -150px;
+  justify-content: center;
+  
+}
+
+.taped_mini1{
   width: 120px;
+  height: 45px;
+  background-color: #FFF5C3;
+  opacity: 60%;
+  display: flex;
+  margin-top: -20px;
+  margin-left: 70px;
+  transform: rotate(-5deg);
+  
+}
+
+.taped_mini2{
+  width: 120px;
+  height: 50px;
+  background-color: #FFF5C3;
+  opacity: 60%;
+  margin-top: -20px;
+  margin-left: 60px;
+  transform: rotate(5deg);
+  
+}
+
+.polaroid_bg_mini_1:hover{
   transform: rotate(5deg);
 }
 
-#bijoux_img img:hover{
+.polaroid_bg_mini_2:hover{
   transform: rotate(-5deg);
-  transition: .5s;
+}
+
+.carte_papet img{
+  width: 200px;
+}
+
+.carte_papet{
+  position: flex;
+  margin-left: -170px;
+  margin-top: 20px;
+}
+
+.bijoux_img img{
+  width: 200px;
 }
 
 .Lilo_face{
@@ -1036,7 +1109,8 @@ h4{
   justify-content: center;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 600px;   
+  margin-left: 600px;  
+  cursor: pointer;
 }
 
 .button_contact span{
@@ -1046,16 +1120,12 @@ h4{
 }
 
 .button_contact:hover{
-  transition: background-color ease-in-out 0.8s, color ease-in .4s .6s; 
-  background-color: #83315d;
-  cursor: pointer;
+  background-color: #bb4c87;
 
 }
 
-.button_:active {
-  background-color: #83315d;
-  box-shadow: 0 5px rgb(151, 151, 151);
-  transform: translateY(4px);
+.button_:focus {
+  background-color: #81385f;
 }
 
 /* Fin Point de vente HTML  */
@@ -1078,12 +1148,10 @@ h4{
   font-weight: bold;
   display: flex;
   margin-bottom: 15px;
-
 }
 
 
 /*  accordion */
-
 .accordion {
   border: none;
   transition: 0.4s;
@@ -1099,7 +1167,6 @@ h4{
   color: white;
   font-family: 'Courier New', Courier, monospace;
 }
-
 
 .title_commande{
   width: 570px;
@@ -1215,7 +1282,6 @@ h4{
   margin: 0 auto;
 }
 
-
 .send_me{
   width: 280px;
   height: 35px;
@@ -1230,7 +1296,7 @@ h4{
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
-  
+  transition: .2s ease-in-out;
 }
 
 .send_me a{
@@ -1239,24 +1305,18 @@ h4{
 }
 
 .send_me:hover{
-  transition: background-color ease-in-out 0.8s, color ease-in .4s .6s; 
-  background-color: #83315d;
+  background-color: #bb4c87;
   cursor: pointer;
-
 }
 
-.send_me:active {
-  background-color: #83315d;
-  box-shadow: 0 5px rgb(151, 151, 151);
-  transform: translateY(4px);
+.send_me:focus {
+  background-color: #81385f;
 }
-
 
 /*  FIN CONTACT HTML */
 
 
 /*  Début Maintenance HTML */
-
 .maintenance{ 
   margin: 0 auto;
   background-size: cover; 
@@ -1286,7 +1346,6 @@ h4{
   color: #83315d;
   text-decoration: none;
 }
-
 
 .not_found h1 {
   font-size: 50px;
@@ -1381,7 +1440,6 @@ h4{
   margin: 0 auto;
   background-size: contain;
   background-position: center top;
-
 }
 
 #Conditions_ventes{
@@ -1442,3 +1500,221 @@ h3{
 }
 
 /* FIN RGPD CGU CGV HTML */
+
+
+/*-- OVERLAY RECHERCHE  (Recup code à gauche et à droite désolé) --*/
+#overlaySearch {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.overlay {
+  margin-top: 10px;
+}
+
+.overlayClose {
+display: flex;
+justify-content: right;
+margin-top: 50px;
+margin-right: 300px;
+cursor: pointer;
+transition: .2s ease-in-out;
+}
+
+.overlayClose:hover {
+  opacity: 0.33;
+}
+
+/*-- Recherche  --*/
+.searchBar_shop {
+  text-align: center;
+}
+
+input[type="search"] {
+  font-size: 14px;
+  color: #333; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box; 
+  width: 800px;
+  height: 40px;
+  padding-left: 15px;
+  border: none;
+  box-shadow:  0px 1px 9px 0px #a7a7a79a;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.shopSearch {
+  position: absolute;
+  border: none;
+  margin-left: -45px;
+  margin-top: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 20px;
+}
+
+.shopSearch img {
+  width: 20px;
+  margin-top: 3px;
+}
+
+.shop_offres_container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Contenu produit - recherche */
+.wishlist_container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.wishlist_offres {
+  margin-left: 25px;
+  width: 193px;
+  height: 260px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+  box-shadow:  0px 5px 9px 0px #a7a7a79a;
+  transition: .2s ease-in-out;
+}
+
+.wishlist_offres:hover {
+  transform: scale(1.03);
+}
+
+.wishlist_offres:first-of-type{
+  margin-left: 0px;
+}
+
+.wishlist_offres a {
+  text-align: center;
+}
+
+.wishlist_product {
+  font-size: 12px;
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+.wishlist_description {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  width: 186px;
+}
+
+.wishlist_price{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wishlist_produit {
+  border-radius: 110px;
+  width: 112px;
+  height: 112px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.wishlist_wishlist {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: -16px;
+  background-image: url("../../img/defaultWishlist.png");
+  background-repeat: no-repeat;
+}
+
+/* bouton panier */
+.wishlist_button_panier {
+  width: 193px;
+  height: auto;
+  color: white;
+  background-color: #E156A0;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wishlist_button_panier span {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.wishlist_button_panier img {
+  width: 12px;
+  height: auto;
+  margin-left: 0px;
+  margin-top: -2px;
+  border-radius: 0px;
+}
+
+.wishlist_button_panier a {
+  text-decoration: none;
+  color: white;
+}
+
+.wishlist_button_panier:hover {
+  background-color: #bb4c87;
+  cursor: pointer;
+}
+
+.wishlist_button_panier:active {
+  background-color: #83315d;
+}
+
+.wishlist_button_rupture {
+  width: 193px;
+  height: auto;
+  color: white;
+  background-color: #000000;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wishlist_button_rupture span {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/*-- FIN OVERLAY RECHERCHE --*/

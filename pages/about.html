@@ -10,6 +10,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
   <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
   <script type="module" src="../assets/js/footer.js" defer></script> <!-- JS | Charge le footer-->
+  <script type="text/javascript" src="../assets/js/overlay.js" defer></script> <!-- JS | Overlay recherche -->
   <title>Qui suis-je ? | Les ateliers de Lilo</title>
 </head>
 
@@ -19,7 +20,10 @@
 <!--  main index -->
 
 <main>   
-    <div id="background_about"> 
+<!-- Background secondaire -->
+
+  <div class="background_lampes">  
+        <!-- Fil d'ariane -->
       <div class="breadcrumbs"><a href="index.html">Accueil > </a><strong>Qui suis-je ?</strong></div>
         
       <div id="content_about">
@@ -55,11 +59,15 @@
 
             </div>
 
-            <div class="doigts">
+            <a href="badges.html" alt="redirection_badges" class="doigts">
               <img src="../img/doigt_badges.png">
 
-            </div>
+            </a>
         
+            <div class="plantes">
+              <img src="../img/plantes.png" alt="plantes">
+            </div>
+
         </div>
 
             <!-- Background blanc polaroïd -->
@@ -73,17 +81,30 @@
                 </div>                  
             </div>
 
-            <div id="carte_papet">
-              <img src="../img/papeterie.png" alt="Papeterie">
-            </div>
-            
-            <div id="bijoux_img">
-              <img src="../img/boucle_oreilles.png" alt="Boucles">
-            </div>
+          <div id="polaroïd_fixed">
+            <a href="bijoux.html" class="polaroid_bg_mini_1">
+              <div class="taped_mini1"></div>
+                <div class="bijoux_img">
+                  <img src="../img/Produits_site/Bijoux/bijoux_31.webp" alt="bijoux_img">
+                </div>                  
+            </a>
+          
+            <a href="papeterie.html" class="polaroid_bg_mini_2">
+              <div class="taped_mini2"></div>
+                <div class="carte_papet">
+                  <img src="../img/papeterie.png" alt="papeterie">
+                </div>                  
+            </a>
+          </div>
       </div>
     </div>
-
-        
+    
+    </div>
+    <div class="background_planche_about">
+      <img src="../img/background/bg_planche.png" alt="planches">
+    </div>
+          
+                 
     
 </main>
  <!-- Footer -->

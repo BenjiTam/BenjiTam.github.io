@@ -1,8 +1,25 @@
-class MyHeader extends HTMLElement {
-    connectedCallback() {
-        const current = this.getAttribute('current');
-        this.innerHTML = `
-        <header>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/main.css"  >
+  <link rel="stylesheet" href="/assets/css/pages/home.css">
+  <link rel="stylesheet" href="/assets/css/header_footer.css"> 
+
+  <link rel="stylesheet" href="/assets/css/boutique.css"> 
+  <link rel="stylesheet" href="/assets/css/overlay.css"> <!-- TEMPORAIRE  OVERLAY RECHERCHE-->
+  <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico"/> <!-- Favicon Les ateliers de Lilo -->
+  <script type="module" src="../assets/js/header.js" defer></script> <!-- JS | Charge le header -->
+  <script type="module" src="../assets/js/footer.js" defer></script> <!-- JS | Charge le footer-->
+  </script>
+  <title>TEST OVERLAY</title>
+</head>
+
+<body>
+    <header>
         <div id="zone1">
           <!-- Logo -->
           <div class="logo">
@@ -186,8 +203,28 @@ class MyHeader extends HTMLElement {
                     </div>
                 </div>
             </section>  
-        </div>`
-    }
-}
+        </div>
 
-customElements.define('main-header', MyHeader);
+
+</main>
+
+  <!-- Footer -->
+  <main-footer current="contact"></main-footer>
+
+  <script>
+    function on() {
+      document.getElementById("overlaySearch").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlaySearch").style.display = "none";
+    }
+    </script>
+
+
+
+</body>
+
+</html>
+
+  </div>
