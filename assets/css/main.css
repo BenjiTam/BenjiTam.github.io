@@ -51,11 +51,12 @@ body{
 
 .background_map{
   display: flex;
-  justify-content: right;
+  justify-content: center;
   background-repeat: no-repeat;
   height: 370px;
-  margin-top: -420px;
+  margin-top: -410px;
   padding-right: 100px;
+  margin-left: -1300px;
 }
 
 .background_planche_contact{
@@ -1080,9 +1081,10 @@ h4{
 .partenarias {
   display: block;
   position: absolute;
-  margin-left: 28px;
-  margin-top: 35px;
+  margin-left: 95px;
+  margin-top: 50px;
   white-space: pre;
+  text-align: left;
 }
 
 #creations {
@@ -1138,14 +1140,19 @@ h4{
 
 }
 
+#foire_questions{
+  margin-left: 40px;
+}
+
 .title_left{
   width: 570px;
   height: 30px;
   background-color: black;
   color: white;
   padding-left: 20px;
-  padding-top: 15px;
+  padding-top: 13px;
   font-weight: bold;
+  font-size: 18px;
   display: flex;
   margin-bottom: 15px;
 }
@@ -1176,6 +1183,7 @@ h4{
   color: white;
   background-color: #E156A0;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .questions_ask{
@@ -1188,9 +1196,10 @@ h4{
 .questions_ask p{
   width: 500px;
   margin-left: 20px;
-  margin-top: 20px;
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 14px;
   display: block;
+  line-height: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1204,6 +1213,7 @@ h4{
     padding-left: 20px;
     padding-top: 15px;
     font-weight: bold;
+    font-size: 18px;
     display: flex;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -1227,12 +1237,14 @@ h4{
   height: 60px;
   display: block;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 18px;
+  margin-bottom: 10px;
 }
 
 .formulaire_descriptif{
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: 15px;
   justify-content: center;
   align-items: center;  
@@ -1240,6 +1252,7 @@ h4{
 }
 
 #name{
+  margin-top: 10px;
   margin-bottom: 20px;
   width: 350px;
   height: 30px;
@@ -1394,22 +1407,18 @@ h4{
 
 .not_found{
   width: 1050px;
-  height: 500px;
+  height: 400px;
   background-color: white;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 50px;
   text-align: center;
 }
 
 .not_found h1{
   font-size: 90px;
   font-weight: bold;
-  margin-top: 50px;
   color: #3D3C3C;
-}
-
-.not_found a{
-  margin-left: 40px;
+  margin: 0 auto
 }
 
 .not_found p{
@@ -1424,10 +1433,20 @@ h4{
   text-transform: uppercase;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
+  padding: 10px 20px;
   text-decoration: none;
   color: black;
-  
+  margin-left: 40px;
+}
+
+.not_found a:first-of-type{
+  margin-left: 0px;
+}
+
+.not_found a:hover{
+  color: white;
+  border: none;
+  background-color: #E156A0;
 }
 
 /* FIN NOT FOUND HTML  */
