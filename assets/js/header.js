@@ -81,7 +81,7 @@ class MyHeader extends HTMLElement {
 
             <!-- Fermer l'overlay -->
             <div class="overlayClose" onclick="off()">
-                <img src="../img/exit-icon.png" alt="fermeture recherche">
+                <img src="../img/Exit-icon.png" alt="fermeture recherche">
             </div>
             
             <!-- Recherche + Filtres -->
