@@ -14,6 +14,10 @@ a  {
   color: #E156A0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*   Main Body / Background */
 
 body{
@@ -45,7 +49,8 @@ body{
   background-repeat: no-repeat;
   justify-content: center;
   display: flex;
-  height: 220px;
+  height: 220px;  
+  width: 1886px;
   align-items: center;
 }
 
@@ -63,7 +68,8 @@ body{
   margin-top: 40px;
   background-repeat: no-repeat;
   justify-content: center;
-  display: flex;
+  display: flex;  
+  width: 1886px;
   height: 220px;
   align-items: center;
 }
@@ -73,7 +79,8 @@ body{
   background-repeat: no-repeat;
   justify-content: center;
   display: flex;
-  height: 220px;
+  height: 220px;  
+  width: 1886px;
   align-items: center;
   margin-bottom: -40px;
 }
@@ -1737,3 +1744,29 @@ input[type="search"] {
   padding-bottom: 8px;
 }
 /*-- FIN OVERLAY RECHERCHE --*/
+
+
+/*-- DEBUT SCROLLTOP --*/
+#scrollTop {
+  border: solid 2px #000000;
+  background-image: url(/img/arrow_scrolltop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-transform: uppercase;
+  transition: all.5s ease-in-out;
+  display: none;
+  position: fixed;
+  border-radius: 25px;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#scrollTop:hover {
+  border-color: #ffffff;
+  filter: invert(1) sepia(0) saturate(88) hue-rotate(109deg);
+}
+/*-- FIN SCROLLTOP --*/
